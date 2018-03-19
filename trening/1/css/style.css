@@ -14,7 +14,8 @@ body {
 nav ul li a,
 #header-background h1,
 h2,
-#view-details {
+#view-details,
+#contact h3 {
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -409,14 +410,29 @@ header {
     height: 100%;
 }
 
+/*CONTACT*/
 #contact {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     padding: 5vh 10vw;
+    background-color: #222222;
+    color: white;
 }
 
-.contact-container {
+#contact h3 {
+    text-transform: uppercase;
+}
+
+.contact-container1 {
+    width: 25%;
+}
+
+.contact-container2 {
+    width: 30%;
+}
+
+.contact-container3 {
     width: 30%;
 }
 
@@ -425,6 +441,49 @@ header {
     flex-direction: row; 
 }
 
+#contact .contact-container div p {
+    display: flex;
+    align-items: center;
+}
+
+.contact-container > div > p > img {
+    margin-right: 10px;
+    width: 25px;
+}
+#contact > div.contact-container > div > img {
+    height: 20px;
+    margin-right: 10px;
+    margin-top: 0.8em;
+}
+
 #contact .contact-container>div p {
     font-size: 10px;
+    margin: 5px;
 }
+
+.tweet-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.column p {
+    margin-bottom: 0;
+}
+
+/*FOOTER*/
+footer {
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-icons i {
+    font-family: 'FontAwesome';
+}
+
