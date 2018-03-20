@@ -15,13 +15,14 @@ nav ul li a,
 #header-background h1,
 h2,
 #view-details,
-#contact h3 {
+#contact h3,
+button {
     font-family: 'Montserrat', sans-serif;
 }
 
 
 /*BUTTONY*/
-button{
+button {
     border: none;
     border-radius: 30px;
     text-decoration: none;
@@ -31,6 +32,26 @@ button{
     text-transform: uppercase;
     color: white;
     text-shadow: 0px 1.5px 3px gray;
+    font-weight: bold;
+    transition: all 0.5s;
+}
+
+button a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+}
+
+button:hover {
+    background-color: white;
+}
+
+button:hover a {
+    color: #222222;
 }
 
 /*NAGŁÓWKI*/
@@ -55,6 +76,15 @@ nav {
     align-items: center;
 }
 
+#button-menu {
+    width: 6vh;
+    height: 6vh;
+    border-radius: 10%;
+    position: absolute;
+    right: 30px;
+    visibility: hidden;
+}
+
 
 nav ul {
     text-decoration: none;
@@ -64,7 +94,12 @@ nav ul {
 nav ul li {
     display: inline-block;
     margin-left: 12px;
+    transition: all 0.5s;
 }
+
+nav ul li:hover a {
+    font-weight: bold;
+} 
 
 nav ul li a {
     text-decoration: none;
@@ -96,7 +131,7 @@ header {
 }
 
 #header-background button {
-    margin-top: 20px;
+    margin-top: 20px; 
 }
 
 /*PROFESSIONAL SERVICES*/
@@ -217,6 +252,10 @@ header {
     font-size: 0.75em;
 }
 
+#relax-button {
+    margin-top: 20px;
+}
+
 /*Latest PROJECTS*/
 #latest-projects {
     background-image: url(../images/projects/background.png);
@@ -280,6 +319,11 @@ header {
     text-decoration: none;
     font-weight: 700;
     font-size: 13px;
+    transition: all 0.5s;
+}
+
+#view-details:hover {
+    color: black;
 }
 
 /*CULTURE*/
@@ -393,6 +437,9 @@ header {
     border: 3px solid white;
     color: white;
     border-radius: 10px;
+    text-shadow: 0px 1.5px 3px transparent;
+    transition: all 0.5s;
+    font-weight: bold;
 }
 
 #talk button a {
@@ -402,6 +449,15 @@ header {
     line-height: 3.1;
     color: white;
     text-decoration: none;
+}
+
+#talk button:hover {
+    background-color: white;
+    
+}
+
+#talk button:hover a {
+    color: #7cc576;
 }
 
 #logos {
@@ -479,12 +535,74 @@ header {
     margin-bottom: 0;
 }
 
+#contact > div.contact-container > div > div > p.hash {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+#contact > div.contact-container > div > div > p.time {
+    font-size: 0.5em;
+}
+
+a.hover {
+    text-decoration: none;
+    transition: all 0.5s;
+    color: white;
+}
+
+#contact .hover:hover {
+    color: #91c68d;
+}
+
 /*FOOTER*/
 footer {
     height: 15vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+}
+
+#copyright {
+    position: absolute;
+    left: 0;
+    margin: 0;
+    padding-left: 10vw;
+    font-size: 0.6em;
+    color: #777777;
 }
  
+#container-footer-icons {
+    position: absolute;
+}
 
+#container-footer-icons a {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    border-radius: 100%;
+    background-color: #222222;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin: 5px;
+    transition: all 0.5s;
+}
+
+#container-footer-icons .footer-icons1:hover {
+    background-color: #00aced;
+}
+
+#container-footer-icons .footer-icons2:hover {
+    background-color: #3b5998;
+}
+
+#container-footer-icons .footer-icons3:hover {
+    background-color: #cb2028;
+}
+
+#container-footer-icons .footer-icons4:hover {
+    background-color: #da2713;
+}

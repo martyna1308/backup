@@ -1,5 +1,80 @@
 @media all and (max-width: 768px) {
+    
+    #menu {
+        height: 8vh;
+    }
+    
+    #logo {
+        right: 90px;
+        position: absolute;
+    }
+    
+    #button-menu {
+        visibility: visible;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .fa-bars,
+    .fa-times {
+        position: absolute;
+    }
+    
+    .fa-times {
+        visibility: hidden;
+    }
+    
+    #menu ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        right: -100%;
+        top: 8vh;
+        padding-right: 30px;
+        text-align: right;
+        margin-top: 0;
+        padding-top: 20px;
+        background-color: white;
+        padding-bottom: 20px;
+        width: 25%;
+    }    
+    
+    #menu ul li {
+        height: 30px;
+        width: 100%;
+    }
+    
+    
     #professional-services-container {
         flex-direction: column;
+    }
+    
+    #culture-container {
+        flex-direction: column;
+    }
+    
+    .culture-line {
+        visibility: hidden;
+    }
+    
+    #clients>div {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .radius2 {
+        order: -1;
+    }
+    
+    #logos {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #logos img {
+        width: fit-content;
+        margin-bottom: 25px;
     }
 }
