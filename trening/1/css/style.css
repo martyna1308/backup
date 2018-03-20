@@ -381,11 +381,11 @@ header {
     height: 35vh;
     background-color: #7cc576;
     text-align: center;
-    padding-top: 3%;
     color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 #talk button {
