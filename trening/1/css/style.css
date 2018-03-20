@@ -383,10 +383,8 @@ header {
     text-align: center;
     padding-top: 3%;
     color: white;
-}
-
-#container-talk {
     display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 
