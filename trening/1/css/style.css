@@ -85,7 +85,6 @@ nav {
     visibility: hidden;
 }
 
-
 nav ul {
     text-decoration: none;
     
@@ -234,12 +233,13 @@ header {
     background-color: rgba(0, 0, 0, 0.75);
     position: absolute;
     padding-left: 10%;
+    padding-top: 5%;
 }
 
 #relax-background h2 {
     text-transform: uppercase;
     color: white;
-    margin: 12% 0 7%;
+    margin: 0;
 }
 
 #relax-background h2 span {
@@ -575,9 +575,15 @@ footer {
  
 #container-footer-icons {
     position: absolute;
+    display: flex;
+    width: 200px;
 }
 
-#container-footer-icons a {
+#container-footer-icons > div {
+    width: 25%;
+}
+
+#container-footer-icons > div > a {
     width: 40px;
     height: 40px;
     display: inline-flex;
