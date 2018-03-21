@@ -19,6 +19,18 @@ menuIcon2.addEventListener("click", function () {
     menu.style.display = "none";
 })
 
+$(window).scroll(function () {
+    var theta = 20;
+
+    
+    $("#circle").css({
+        "transform": "rotate(' + theta + 'deg)",
+        "-webkit-transform": "rotate(' + theta + 'deg)",
+        "-moz-transform": "rotate(' + theta + 'deg)"
+    
+    });
+});
+
 
 
 
