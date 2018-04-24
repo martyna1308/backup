@@ -186,11 +186,16 @@ header {
 }
 
 #relax-grey img {
-    height: 70%;
+    height: 80%;
     position: absolute;
     top: 50%;
     transform: translate(50%, -50%);
     right: 0;
+    transition: all 1s;
+}
+
+#relax-grey img:hover {
+    transform: translate(50%, -50%) rotate(60deg);
 }
 
 #relax-background {
@@ -205,7 +210,6 @@ header {
 .relax-icon {
     display: flex;
     flex-direction: row;
-    margin-bottom: 15px;
 }
 
 .relax-icon img {
@@ -225,6 +229,7 @@ header {
     width: 100%;
     position: absolute;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 #relax-background-mask-grey {
@@ -233,7 +238,9 @@ header {
     background-color: rgba(0, 0, 0, 0.75);
     position: absolute;
     padding-left: 10%;
-    padding-top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 #relax-background h2 {
@@ -247,13 +254,8 @@ header {
 }
 
 #relax-background-mask-grey>p {
-    margin-bottom: 7%;
     padding-right: 26%;
     font-size: 0.75em;
-}
-
-#relax-button {
-    margin-top: 20px;
 }
 
 /*Latest PROJECTS*/
@@ -283,6 +285,7 @@ header {
     font-size: 12px;
     margin-top: 10px;
     line-height: 2.5;
+    transition: all 1s;
 }
 
 .latest-projects-icon img {

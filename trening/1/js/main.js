@@ -19,11 +19,13 @@ menuIcon2.addEventListener("click", function () {
     menu.style.display = "none";
 })
 
-$(window).scroll(function () {
+
+
+$("#relax").scroll(function () {
     var theta = 20;
 
-    
-    $("#circle").css({
+    console.log('bla');
+    $("#relax-grey img").css({
         "transform": "rotate(' + theta + 'deg)",
         "-webkit-transform": "rotate(' + theta + 'deg)",
         "-moz-transform": "rotate(' + theta + 'deg)"
