@@ -16,14 +16,13 @@ nav ul li a,
 h2,
 #view-details,
 #contact h3,
-button {
+.button {
     font-family: 'Montserrat', sans-serif;
 }
 
 
 /*BUTTONY*/
-button {
-    border: none;
+.button {
     border-radius: 30px;
     text-decoration: none;
     background-color: #7cc576;
@@ -34,25 +33,18 @@ button {
     text-shadow: 0px 1.5px 3px gray;
     font-weight: bold;
     transition: all 0.5s;
-}
-
-button a {
-    width: 100%;
-    height: 100%;
+    text-align: center;
     display: flex;
-    align-items: center;
     justify-content: center;
-    text-decoration: none;
-    color: white;
+    align-items: center;
+    font-size: 0.8em;
 }
 
-button:hover {
+.button:hover {
     background-color: white;
-}
-
-button:hover a {
     color: #222222;
 }
+
 
 /*NAGŁÓWKI*/
 #header-background h1 {
@@ -83,6 +75,9 @@ nav {
     position: absolute;
     right: 30px;
     visibility: hidden;
+    background-color: #7cc576;
+    color: white;
+    border: none;
 }
 
 nav ul {
@@ -378,19 +373,19 @@ header {
     position: relative;
 }
 
-#culture-icon-container {
+.culture-icon-container {
     margin: 20px;
 }
 
-#culture-icon-container img {
+.culture-icon-container img {
     transition: all 1s ease-out;
 }
 
-#culture-icon-container:hover img {
+.culture-icon-container:hover img {
     transform: rotate(360deg);
 }
 
-#culture-icon-container>p {
+.culture-icon-container>p {
     font-size: 0.7em;
     color: #777777;
 }
@@ -475,7 +470,13 @@ header {
     align-items: center;
 }
 
-#talk button {
+#container-talk {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#talk a {
     background-color: transparent;
     border: 3px solid white;
     color: white;
@@ -483,23 +484,13 @@ header {
     text-shadow: 0px 1.5px 3px transparent;
     transition: all 0.5s;
     font-weight: bold;
-}
-
-#talk button a {
-    width: 100%;
-    height: 100%;
-    display: inline-block;
-    line-height: 3.1;
-    color: white;
     text-decoration: none;
+    padding: 10px;
+    text-transform: uppercase;
 }
 
-#talk button:hover {
+#talk a:hover {
     background-color: white;
-    
-}
-
-#talk button:hover a {
     color: #7cc576;
 }
 
