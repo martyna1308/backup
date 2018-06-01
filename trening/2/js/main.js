@@ -78,10 +78,33 @@ const arrow = document.querySelector("#container-browse i.fas");
 
 setInterval(function jumpArrow(){
     arrow.style.bottom = "+20px";
-    console.log("klik");
+    
 }
 
 , 2000);
+
+
+/*MENU*/
+const menu = document.getElementById("menu");
+const menuButton = document.getElementById("menu-button"); 
+const menuItem = document.getElementsByClassName("menu-item");
+const menuIcon = document.querySelector("#menu-button i");
+
+
+menuButton.addEventListener("click", function() {
+    if (document.querySelector("#menu ul").className === "close") {
+        console.log('dziala');
+        menu.style.height = "auto";
+        menuIcon.className = "fas fa-times";
+    }
+});
+
+if
+document.querySelector("#menu ul") {
+    
+}
+
+
 
 
 

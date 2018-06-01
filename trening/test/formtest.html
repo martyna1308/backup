@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form action="https://formspree.io/drozdewa0505@gmail.com" method="POST">
+        <h3>Napisz do nas</h3><br>
+        <label for="name">Imię *<br><input type="text" name="name" id="name" required></label><br>
+        <label for="surname">Nazwisko *<br><input type="text" name="surname" id="surname" required></label><br>
+        <label for="email">Mail *<br><input type="email" name="email" id="email" required></label><br>
+        <label for="phone">Telefon <br><input type="text" name="phone" id="phone"></label><br>
+        <label for="city">Wybierz miasto *<br></label><select id="city">
+            <option value="">Warszawa</option>
+            <option value="">Kraków</option>
+            <option value="">Gdańsk</option>
+        </select><br>
+        <label for="female">Kobieta<br><input type="radio" name="gender" id="female"></label><br>
+        <label for="male">Mężczyzna<br><input type="radio" name="gender" id="male"></label><br>
+        <label for="agreement">Wyrażam zgodę na przetwarzanie moich danych osobowych podanych w powyższym formularzu, w celu otrzymania cennika usług, przez Akademia108 sp. z o.o. <br>
+<input type="checkbox" name="agreement" id="agreement"></label><br>
+        <label for="message">Wiadomość *<br><textarea name="message" id="message" cols="60" rows="20" placeholder="Twoja wiadomość.." required></textarea></label><br>
+        <label for="submit"><br><input type="submit" id="submit" value="Wyślij"></label>
+    </form>
+</body>
+</html>
