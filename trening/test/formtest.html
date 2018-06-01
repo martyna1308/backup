@@ -6,23 +6,55 @@
 </head>
 <body>
 
-    <form action="https://formspree.io/drozdewa0505@gmail.com" method="POST">
-        <h3>Napisz do nas</h3><br>
-        <label for="name">Imię *<br><input type="text" name="name" id="name" required></label><br>
-        <label for="surname">Nazwisko *<br><input type="text" name="surname" id="surname" required></label><br>
-        <label for="email">Mail *<br><input type="email" name="email" id="email" required></label><br>
-        <label for="phone">Telefon <br><input type="text" name="phone" id="phone"></label><br>
-        <label for="city">Wybierz miasto *<br></label><select id="city">
-            <option value="">Warszawa</option>
-            <option value="">Kraków</option>
-            <option value="">Gdańsk</option>
-        </select><br>
-        <label for="female">Kobieta<br><input type="radio" name="gender" id="female" value="female"></label><br>
-        <label for="male">Mężczyzna<br><input type="radio" name="gender" id="male"></label><br>
-        <label for="agreement">Wyrażam zgodę na przetwarzanie moich danych osobowych podanych w powyższym formularzu, w celu otrzymania cennika usług, przez Akademia108 sp. z o.o. <br>
-<input type="checkbox" name="agreement" id="agreement"></label><br>
-        <label for="message">Wiadomość *<br><textarea name="message" id="message" cols="60" rows="20" placeholder="Twoja wiadomość.." required></textarea></label><br>
-        <label for="submit"><br><input type="submit" id="submit" value="Wyślij"></label>
-    </form>   
+   <form action="https://formspree.io/drozdewa0505@gmail.com" method="POST">
+    <table> 
+    <tr>
+        <td>Imię:</td>
+        <td><input type="text" class="input-text" id="imie" name="imie"></td>
+    </tr>
+    <tr>
+        <td>Nazwisko:</td>
+        <td><input type="text" class="input-text" id="nazwisko" name="nazwisko"></td>
+    </tr>
+    <tr>
+        <td>E-mail:</td>
+        <td><input type="email" class="input-text" id="email" name="email"></td>
+    </tr>
+    <tr>
+        <td>Numer telefonu:</td>
+        <td><input type="text" class="input-text" id="telefon" name="telefon"></td>
+    </tr>
+    <tr>
+        <td>Miasto:</td>
+        <td>
+            <select name="miasto" id="miasto">
+                <option id="krakow" value="krakow">Kraków</option>
+                <option id="warszawa" value="warszawa">Warszawa</option>
+                <option id="gdansk" value="gdansk">Gdańsk</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td>Płeć:</td>
+        <td>
+        <input type="radio" id="kobieta" value="kobieta" name="gender">Kobieta
+        <input type="radio" id="mezczyzna" value="mezczyzna" name="gender">Mężczyzna</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><input type="checkbox" id="zgoda" name="zgoda"> Zgoda na dane osobowe</td>
+    </tr>
+    <tr>
+        <td>Wiadomość:</td>
+        <td><textarea class="input-text" name="wiadomosc" placeholder="Tutaj wpisz wiadomość"></textarea></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><input type="submit" id="button" class="button" value="Wyślij"></td>
+    </tr>
+</table>
+    </form>
+    
+    
 </body>
 </html>
