@@ -73,36 +73,93 @@ dot4.addEventListener("click", function() {
     dot4.style.backgroundColor = "black";
 })
 
-/*ARROW*/
-const arrow = document.querySelector("#container-browse i.fas");
-
-setInterval(function jumpArrow(){
-    arrow.style.bottom = "+20px";
-    
-}
-
-, 2000);
-
-
 /*MENU*/
-const menu = document.getElementById("menu");
+const menu = document.querySelector(".menu-close");
 const menuButton = document.getElementById("menu-button"); 
 const menuItem = document.getElementsByClassName("menu-item");
 const menuIcon = document.querySelector("#menu-button i");
 
-
 menuButton.addEventListener("click", function() {
-    if (document.querySelector("#menu ul").className === "close") {
-        console.log('dziala');
-        menu.style.height = "auto";
-        menuIcon.className = "fas fa-times";
+    if(menu.className === "menu-close") {
+        menu.className += " menu-on";
+    
+    } else if (menu.className === "menu-close menu-on") {
+        menu.className = "menu-close"
+    }        
+})
+
+
+/*PORTFOLIO*/
+
+const portfolioWeb = document.getElementsByClassName("web");
+const portfolioPrint = document.getElementsByClassName("print");
+const portfolioAll = document.getElementsByClassName("portfolio-photo");
+
+const buttonWeb = document.getElementById("category-web");
+const buttonPrint = document.getElementById("category-print");
+const buttonAll = document.getElementById("category-all");
+
+const viewAll = document.querySelector("#container-browse");
+
+function wysokoscPortfolio() {
+    const portfolioAllActual = document.getElementsByClassName("portfolio-photo");
+    
+    if (portfolioAllActual.length > 9 ) {
+        for (let a = 9; a < portfolioAllActual.length; a++) {
+        portfolioAllActual[a].style.display = "none";
+        }
     }
+};
+
+wysokoscPortfolio();
+
+
+buttonWeb.addEventListener("click", function () {
+
+    for (let i = 0; i < portfolioAll.length; i++) {
+        portfolioAll[i].style.display = "none";
+    }
+
+    for (let j = 0; j < portfolioWeb.length; j++) {
+        portfolioWeb[j].style.display = "block";
+    }
+
+    wysokoscPortfolio();
 });
 
-if
-document.querySelector("#menu ul") {
+buttonPrint.addEventListener("click", function() {
     
-}
+    for (let i = 0; i<portfolioAll.length; i++) { 
+        portfolioAll[i].style.display = "none";
+    }
+    
+    for (let j = 0; j<portfolioPrint.length; j++) { 
+        portfolioPrint[j].style.display = "block";
+    }
+    
+    wysokoscPortfolio();
+});
+
+buttonAll.addEventListener("click", function() {
+    
+    for (let i = 0; i<portfolioAll.length; i++) { 
+        portfolioAll[i].style.display = "block";
+    }
+    
+    wysokoscPortfolio();
+});
+
+viewAll.addEventListener("click", function() {
+    for (let i = 0; i<portfolioAll.length; i++) { 
+        portfolioAll[i].style.display = "block";
+    }
+    
+    document.querySelector("#container-browse i").className = "fas fa-angle-up";
+    
+    viewAll.className += "open";
+    
+})
+
 
 
 

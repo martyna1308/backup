@@ -1,33 +1,33 @@
 @media all and (max-width: 900px) {
     
     #menu {
-        height: 70px;    
+       
     }
     
-    #menu ul {
+    #menu button {
+        display: flex;
+        right: 5vw;
+    }
+    
+    .menu-close {
         flex-direction: column;
         align-items: flex-end;
-        margin-top: 90px;
-        visibility: hidden;
+        margin-top: 80px;
+        display: none;
     }
     
-    #menu ul li {
+    .menu-close li {
         margin-bottom: 30px;
+    }
+    
+    .menu-on {
+        display: flex;
     }
     
 }
 
 
 @media all and (max-width: 800px) {
-    
-    #menu ul {
-        flex-direction: column;
-        align-items: flex-end;
-    }
-    
-    #menu ul li {
-        margin-bottom: 30px;
-    }
     
     #main {
         display: block;
