@@ -6,53 +6,28 @@
 </head>
 <body>
 
-   <form action="https://formspree.io/drozdewa0505@gmail.com" method="POST">
-    <table> 
-    <tr>
-        <td>Imię:</td>
-        <td><input type="text" class="input-text" id="imie" name="imie"></td>
-    </tr>
-    <tr>
-        <td>Nazwisko:</td>
-        <td><input type="text" class="input-text" id="nazwisko" name="nazwisko"></td>
-    </tr>
-    <tr>
-        <td>E-mail:</td>
-        <td><input type="email" class="input-text" id="email" name="email"></td>
-    </tr>
-    <tr>
-        <td>Numer telefonu:</td>
-        <td><input type="text" class="input-text" id="telefon" name="telefon"></td>
-    </tr>
-    <tr>
-        <td>Miasto:</td>
-        <td>
-            <select name="miasto" id="miasto">
-                <option id="krakow" value="krakow">Kraków</option>
-                <option id="warszawa" value="warszawa">Warszawa</option>
-                <option id="gdansk" value="gdansk">Gdańsk</option>
-            </select>
-        </td>
-    </tr>
-    <tr>
-        <td>Płeć:</td>
-        <td>
-        <input type="radio" id="kobieta" value="kobieta" name="gender">Kobieta
-        <input type="radio" id="mezczyzna" value="mezczyzna" name="gender">Mężczyzna</td>
-    </tr>
-    <tr>
-        <td></td>
-        <td><input type="checkbox" id="zgoda" name="zgoda"> Zgoda na dane osobowe</td>
-    </tr>
-    <tr>
-        <td>Wiadomość:</td>
-        <td><textarea class="input-text" name="wiadomosc" placeholder="Tutaj wpisz wiadomość"></textarea></td>
-    </tr>
-    <tr>
-        <td></td>
-        <td><input type="submit" id="button" class="button" value="Wyślij"></td>
-    </tr>
-</table>
+  
+        <form action="https://formspree.io/drozdewa0505@gmail.com" method="POST" autocomplete="off">
+        <fieldset name="customer-info">
+            <legend>Customer info: </legend>
+            <label>Name: <input type="text" name="username" placeholder="Enter your name" autofocus required></label>
+            <label>Telephone: <input type="text" name="phone" pattern="\d{1}[\-]\d{3}[\-]\d{3}[\-]\d{4}" 
+                                placeholder="Pattern: 1-234-567-8910" required></label>
+            <label>Email address: <input type="email" name="mail" placeholder="Enter your email address" multiple required></label>
+        </fieldset>
+        <fieldset name="books">
+            <legend>Books: </legend>
+            <input list="books-list" name="books-list">
+            <datalist id="books-list">
+                <option value="Book1">Book1</option>
+                <option value="Book2">Book2</option>
+                <option value="Book3">Book3</option>
+                <option value="Book4">Book4</option>
+                <option value="Book5">Book5</option>
+            </datalist> 
+            <label>Quantity (maximum 5): <input type="number" name="quantity" min="1" max="5"></label>
+        </fieldset>
+        <input type="submit" value="Submit" id="submit">
     </form>
     
     
