@@ -1,77 +1,63 @@
 /*CUSTOMER SAY*/
+const customers = document.getElementsByClassName("customer-container");
+const dots = document.getElementsByClassName("customer-dot");
+const customerOne = document.getElementById("customer-container1");
+const customerTwo = document.getElementById("customer-container2");
+const customerThree = document.getElementById("customer-container3");
+const customerFour = document.getElementById("customer-container4");
 
-const box = document.getElementsByClassName("customer-container");
+const dotOne = document.getElementById("customer-dot1");
+const dotTwo = document.getElementById("customer-dot2");
+const dotThree = document.getElementById("customer-dot3");
+const dotFour = document.getElementById("customer-dot4");
 
-const box1 = document.getElementById("customer-container1");
+let numberSlide = 0;
+sliderCustomers();
 
-const box2 = document.getElementById("customer-container2");
-
-const box3 = document.getElementById("customer-container3");
-
-const box4 = document.getElementById("customer-container4");
-
-const dot = document.getElementsByClassName("customer-dot");
-
-const dot1 = document.getElementById("customer-dot1");
-
-const dot2 = document.getElementById("customer-dot2");
-
-const dot3 = document.getElementById("customer-dot3");
-
-const dot4 = document.getElementById("customer-dot4");
-console.log(dot.length);
-dot1.addEventListener("click", function() {
-    box1.style.display = "flex";
-    box2.style.display = "none";
-    box3.style.display = "none";
-    box4.style.display = "none";
+function sliderCustomers() {
+    let a;
     
-    for(let i = 0; i<dot.length-1; i++) {
-        dot[i].style.backgroundColor = "#7b7b7b"
-    };
+    for (i = 0; i < customers.length; i++) {
+      customers[i].style.display = "none"; 
+    }
     
-    dot1.style.backgroundColor = "black";
+    numberSlide++;
     
-})
+    if (numberSlide > customers.length) {numberSlide = 1} 
+    customers[numberSlide-1].style.display = "flex"; 
+    setTimeout(sliderCustomers, 3000); 
+    
+}
 
-dot2.addEventListener("click", function() {
-    box2.style.display = "flex";
-    box1.style.display = "none";
-    box3.style.display = "none";
-    box4.style.display = "none";
-    
-    for(let i = 0; i<dot.length-1; i++) {
-        dot[i].style.backgroundColor = "#7b7b7b"
-    };
-    
-    dot2.style.backgroundColor = "black";
-})
 
-dot3.addEventListener("click", function() {
-    box3.style.display = "flex";
-    box2.style.display = "none";
-    box1.style.display = "none";
-    box4.style.display = "none";
-    
-    for(let i = 0; i<dot.length; i++) {
-        dot[i].style.backgroundColor = "#7b7b7b"
-    };
-    
-    dot3.style.backgroundColor = "black";
-})
+dotOne.addEventListener("click", function() {
+    for ( let i=0; i<dots.length; i++ ) {
+        dots[i].style.backgroundColor = "#7b7b7b";
+        dots[0].style.backgroundColor = "black";
+    }
+});
 
-dot4.addEventListener("click", function() {
-    box4.style.display = "flex";
-    box2.style.display = "none";
-    box3.style.display = "none";
-    box1.style.display = "none";
-    
-    for(let i = 0; i<dot.length-1; i++) {
-        dot[i].style.backgroundColor = "#7b7b7b"
-    };
-    
-    dot4.style.backgroundColor = "black";
-})
+dotTwo.addEventListener("click", function() {
+    for (let i=0; i<dots.length; i++) {
+        dots[i].style.backgroundColor = "#7b7b7b";
+        dots[1].style.backgroundColor = "black";
+    }
+});
+
+dotThree.addEventListener("click", function() {
+    for (let i=0; i<dots.length; i++) {
+        dots[i].style.backgroundColor = "#7b7b7b";
+        dots[2].style.backgroundColor = "black";
+    }
+});
+
+dotFour.addEventListener("click", function() {
+    for (let i=0; i<dots.length; i++) {
+        dots[i].style.backgroundColor = "#7b7b7b";
+        dots[3].style.backgroundColor = "black";
+    }
+});
+
 
 /*MENU*/
 const menu = document.querySelector(".menu-close");

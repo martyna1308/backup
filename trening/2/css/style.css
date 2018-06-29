@@ -470,7 +470,7 @@ button {
     transition: all 0.5s;
 }
 
-.customer-dot:hover {
+.customer-dot:first-of-type {
     background-color: black;
 }
 
