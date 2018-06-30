@@ -13,10 +13,9 @@ const dotFour = document.getElementById("customer-dot4");
 
 let numberSlide = 0;
 sliderCustomers();
+let numberSlideChange = setInterval(sliderCustomers, 3000);
 
 function sliderCustomers() {
-    let a;
-    
     for (i = 0; i < customers.length; i++) {
       customers[i].style.display = "none"; 
     }
@@ -25,36 +24,72 @@ function sliderCustomers() {
     
     if (numberSlide > customers.length) {numberSlide = 1} 
     customers[numberSlide-1].style.display = "flex"; 
-    setTimeout(sliderCustomers, 3000); 
+     
+    
+    function clearColor(){
+        dots[0].style.backgroundColor = "#7b7b7b";
+        dots[1].style.backgroundColor = "#7b7b7b";
+        dots[2].style.backgroundColor = "#7b7b7b";
+        dots[3].style.backgroundColor = "#7b7b7b";
+        };
+    
+    if(numberSlide === 1){
+       clearColor();
+       dotOne.style.backgroundColor = "black";
+       }
+    
+    if(numberSlide === 2){
+        clearColor();
+       dotTwo.style.backgroundColor = "black";
+       }
+    if(numberSlide === 3){
+       clearColor();
+        dotThree.style.backgroundColor = "black";
+       }
+    if(numberSlide === 4){
+       clearColor();
+        dotFour.style.backgroundColor = "black";
+       }
     
 }
 
-
 dotOne.addEventListener("click", function() {
+    clearInterval(numberSlideChange);
     for ( let i=0; i<dots.length; i++ ) {
         dots[i].style.backgroundColor = "#7b7b7b";
         dots[0].style.backgroundColor = "black";
+        customers[i].style.display = "none";
+        customers[0].style.display = "flex";
     }
 });
 
 dotTwo.addEventListener("click", function() {
+    clearInterval(numberSlideChange);
     for (let i=0; i<dots.length; i++) {
         dots[i].style.backgroundColor = "#7b7b7b";
         dots[1].style.backgroundColor = "black";
+        customers[i].style.display = "none";
+        customers[1].style.display = "flex";
     }
 });
 
 dotThree.addEventListener("click", function() {
+    clearInterval(numberSlideChange);
     for (let i=0; i<dots.length; i++) {
         dots[i].style.backgroundColor = "#7b7b7b";
-        dots[2].style.backgroundColor = "black";
+        dots[2].style.backgroundColor = "black"; 
+        customers[i].style.display = "none";
+        customers[2].style.display = "flex";
     }
 });
 
 dotFour.addEventListener("click", function() {
+    clearInterval(numberSlideChange);
     for (let i=0; i<dots.length; i++) {
         dots[i].style.backgroundColor = "#7b7b7b";
         dots[3].style.backgroundColor = "black";
+        customers[i].style.display = "none";
+        customers[3].style.display = "flex";
     }
 });
 
