@@ -170,16 +170,30 @@ buttonAll.addEventListener("click", function() {
     wysokoscPortfolio();
 });
 
+let countClick = 0;
+
 viewAll.addEventListener("click", function() {
-    for (let i = 0; i<portfolioAll.length; i++) { 
-        portfolioAll[i].style.display = "block";
+    
+    if (countClick === 0) {
+    
+        for (let i = 0; i<portfolioAll.length; i++) { 
+            portfolioAll[i].style.display = "block";
+        }
+
+        document.querySelector("#container-browse i").className = "fas fa-angle-up";
+        
+        countClick = 1;
     }
     
-    document.querySelector("#container-browse i").className = "fas fa-angle-up";
-    
-    viewAll.className += "open";
-    
+    else if(countClick === 1) {
+        wysokoscPortfolio();
+        document.querySelector("#container-browse i").className = "fas fa-angle-down";
+        countClick = 0;
+    }
+     
 })
+
+
 
 
 

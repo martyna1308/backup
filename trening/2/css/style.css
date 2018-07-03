@@ -167,6 +167,7 @@ button {
 .icon {
     text-align: center;
     width: 18vw;
+    transition: all 0.5s;
 }
 
 .fas {
@@ -186,6 +187,15 @@ button {
     padding: 7px;
     border-radius: 5px;
     margin: 10px;
+    transition: all 0.3s;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+}
+
+button:hover {
+    background-color: #d7514e;
 }
 
 /*--------OUR GREATEST WORKS--------*/
@@ -539,7 +549,7 @@ button {
     width: 5vw;
 }
 
-.media .media-icon:first-child {
+.media .media-icon:hover {
     background-color: #fcf3ff;
 }
 
