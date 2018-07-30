@@ -7,27 +7,34 @@
 <body>
 
   
-        <form action="https://formspree.io/drozdewa0505@gmail.com" method="POST" autocomplete="off">
-        <fieldset name="customer-info">
-            <legend>Customer info: </legend>
-            <label>Name: <input type="text" name="username" placeholder="Enter your name" autofocus required></label>
-            <label>Telephone: <input type="text" name="phone" pattern="\d{1}[\-]\d{3}[\-]\d{3}[\-]\d{4}" 
-                                placeholder="Pattern: 1-234-567-8910" required></label>
-            <label>Email address: <input type="email" name="mail" placeholder="Enter your email address" multiple required></label>
-        </fieldset>
-        <fieldset name="books">
-            <legend>Books: </legend>
-            <input list="books-list" name="books-list">
-            <datalist id="books-list">
-                <option value="Book1">Book1</option>
-                <option value="Book2">Book2</option>
-                <option value="Book3">Book3</option>
-                <option value="Book4">Book4</option>
-                <option value="Book5">Book5</option>
-            </datalist> 
-            <label>Quantity (maximum 5): <input type="number" name="quantity" min="1" max="5"></label>
-        </fieldset>
-        <input type="submit" value="Submit" id="submit">
+   <header>
+       <h1>A Simple Form</h1>
+       <h2>Form fundamentals</h2>
+   </header>
+    <form action="https://formspree.io/martyna1308@gmail.com" method="POST">
+        <label for="name">Imię:</label><br>
+        <input type="text" name="name" id="name"> <br><br>
+        <label for="surname">Nazwisko:</label><br>
+        <input type="text" name="surname " id="surname"><br><br>
+        <label for="mail">Email:</label><br>
+        <input type="email" name="email " id="mail"><br><br>
+        <label for="telnum">Telefon:</label><br>
+        <input type="number" name="telephone " id="telnum"><br><br>
+        <label for="town">Miasto:</label>
+        <select name="town" id="town">
+            <option value="krakow">Kraków</option>
+            <option value="warszawa">Warszawa</option>
+            <option value="gdansk">Gdańsk</option>
+            <option value="default" selected>wybierz miasto</option>
+        </select><br><br>
+        <label>Płeć:</label><br>
+        <input type="radio" name="gender">Kobiera
+        <input type="radio" name="gender">Mężczyzna <br><br>
+        <label for="agreement">Zgadzam się na przetwarzanie moich danych osobowych.</label>
+        <input type="checkbox" name="agreement" id="agreement" required><br><br>
+        <label for="agreement">Wiadomość:</label><br>
+        <textarea name="message" id="message" cols="30" rows="10" placeholder="Napisz coś o sobie..."></textarea><br>
+        <input type="submit">  
     </form>
     
     
