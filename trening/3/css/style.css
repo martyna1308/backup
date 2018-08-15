@@ -1,0 +1,22 @@
+/*-------------------MENU------------------*/
+.btn {
+    font-size: 0.8rem;
+}
+
+.btn,
+.btn:hover,
+.btn:active,
+.btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle {
+    border: none;
+    background-color: transparent;
+    margin: 0 5px;
+    color: black;
+}
+
+.btn-secondary:not(:disabled):not(.disabled).active:focus, .btn-secondary:not(:disabled):not(.disabled):active:focus, .show>.btn-secondary.dropdown-toggle:focus {
+    box-shadow: none;
+}
+
+.dropdown-menu {
+    border: none;
+}
