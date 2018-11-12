@@ -6,9 +6,9 @@
     <title>Photography</title>
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
-   
-   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
-   
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Playfair+Display" rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.css">
@@ -190,12 +190,13 @@
             <hr>
         </div>
 
-        <a href=""><i class="fab fa-pinterest-p"></i></a>
-        <a href=""><i class="fab fa-instagram"></i></a>
-        <a href=""><i class="fab fa-twitter"></i></a>
-        <a href=""><i class="fab fa-google-plus-g"></i></a>
-        <a href=""><i class="fab fa-tumblr"></i></a>
-
+        <div class="follow-container">
+            <a href=""><i class="fab fa-pinterest-p"></i></a>
+            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+            <a href=""><i class="fab fa-google-plus-g"></i></a>
+            <a href=""><i class="fab fa-tumblr"></i></a>
+        </div>
     </section>
 
     <section id="contact">
@@ -207,8 +208,9 @@
 
         <form action="">
 
-            <input type="text"><input type="text">
-            <textarea name="" id="" cols="40" rows="30"></textarea>
+            <input type="text" placeholder="Name*">
+            <input type="text" placeholder="Surname*">
+            <textarea name="" id="" cols="40" rows="30" placeholder="Message*"></textarea>
             <p>All fields marked with an asterisk (*) are required</p>
             <button>SEND</button>
 
@@ -218,13 +220,13 @@
 
     <footer id="footer">
 
-        <a href="#main"><i class="arrow-up"></i></a>
+        <a href="#main"><i class="fas fa-angle-up"></i></a>
 
         <div class="logo">
             Clarrisa <br><span>photography</span>
         </div>
 
-        <div class="copy">&copy; 2018 Clarissa</div>
+        <p class="copy">&copy; 2018 Clarissa</p>
 
 
     </footer>
@@ -232,7 +234,7 @@
 
     <!--SCRIPTS-->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    
+
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 
     <script>
@@ -240,8 +242,8 @@
             $('.slider').bxSlider();
         });
     </script>
-    
-    
+
+
 
     <script src="js/main.js"></script>
 </body>

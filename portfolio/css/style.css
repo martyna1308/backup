@@ -51,14 +51,22 @@ input[type="submit"] {
 header {
     background-color: #2c84cd;
     position: relative;
+    margin-bottom: 40px;
 }
 
-header nav {
+nav {
     width: 100%;
     height: 12%;
 }
 
-header nav ul {
+nav button {
+    position: absolute;
+    display: none;
+    top: 30px;
+    right: 30px;
+}
+
+nav ul {
     width: 100%;
     height: 100%;
     list-style: none;
@@ -68,11 +76,11 @@ header nav ul {
     padding-top: 10px;
 }
 
-header nav ul li {
+nav ul li {
     margin-left: 70px;
 }
 
-header nav ul li a {
+nav ul li a {
     text-decoration: none;
     color: #3f3f3f;
     font-size: 70px;
@@ -243,4 +251,16 @@ footer {
     font-family: "Caveat", cursive;
     font-size: 20px;
     letter-spacing: 2px;
+}
+
+.up-button {
+    cursor: pointer;
+}
+
+.up-button i {
+    font-size: 45px;
+    position: fixed;
+    bottom: 8vh;
+    right: 50px;
+    display: none;
 }

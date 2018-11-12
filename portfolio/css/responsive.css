@@ -1,0 +1,17 @@
+@media all and (max-width: 900px) {
+    header {
+        overflow: hidden;
+    }
+    
+    nav {
+        margin-left: 100vw;
+    }
+    
+    nav button {
+        display: inline-block;
+    }
+    
+    nav ul {
+        margin-right: 100vw;
+    }
+}
