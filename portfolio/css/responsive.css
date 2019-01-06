@@ -2,16 +2,16 @@
     header {
         overflow: hidden;
     }
-    
     nav {
         margin-left: 100vw;
     }
-    
     nav button {
         display: inline-block;
     }
-    
     nav ul {
-        margin-right: 100vw;
+        position: absolute;
+        right: 30px;
+        top: 16%;
+        flex-direction: column;
     }
 }
