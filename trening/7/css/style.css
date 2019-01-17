@@ -176,14 +176,75 @@ header button {
 /* ----- CITY OF LOVE ------*/
 #city {
     display: flex;
-    padding: 0 7vw;
+    padding: 70px 7vw;
 }
 
 #city div {
     width: 50%;
 }
 
+#city .city-img {
+    position: relative;
+}
+
+#city .city-img img {
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%)
+    
+}
+
 #city .city-text p {
     line-height: 2;
+}
+
+/* ----- DESTINATION -----*/
+#destination {
+    background-color: #f2fefe;
+    padding: 70px 7vw;
+    position: relative;
+}
+
+#destination .destination-title {
+    padding: 0 60px 45px 60px;
+    padding
+}
+
+#destination .destination-title p {
+    width: 65%;
+    line-height: 1.7;
+}
+
+#destination .regulation {
+    position: absolute;
+    right: 7vw;
+    top: 120px;
+    display: flex;
+    align-items: center;
+}
+
+#destination .regulation div {
+    margin-right: 5px;
+    margin-top: 6px;
+    color: #c1c1c1;
+    
+}
+
+#destination .regulation div i {
+    color: #c1c1c1;
+    
+}
+
+.destination-functions .search {
+    border-radius: 30px;
+    padding: 8px 0 8px 14px;
+    width: 250px;
+    background-color: #fff;
+}
+
+.destination-functions .search input {
+    border: none;
+    margin-left: 8px;
 }
 
