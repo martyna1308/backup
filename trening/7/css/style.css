@@ -1,0 +1,189 @@
+* {
+    box-sizing: border-box;    
+}
+
+/*FONTS*/
+@font-face {
+    font-family: "Chunkfive Print";
+    src: url(../fonts/ChunkFivePrint.ttf);
+}
+
+#menu #logo {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#menu ul .menu-item,
+p,
+header button {
+    font-family: 'Lato', sans-serif;
+}
+
+header h1,
+h2 {
+    font-family: 'Chunkfive Print', sans-serif;
+}
+
+/* COMMON */
+h2 {
+    color: #29d9c2;
+    font-size: 3.5em;
+}
+
+h2 span {
+    color: #01a2a6;
+
+}
+
+p {
+    color: #777777;
+}
+
+/* HEADER */
+#main {
+    height: 80vh;
+    padding: 0 7vw;
+    background-color: #9bddd8;
+    background-image: url(../img/header-photo.png);
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 20vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    
+}
+
+#menu {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 999;
+}
+
+#menu #logo {
+    font-size: 20px;
+    color: #fff;
+    flex-basis: 40%;
+}
+
+#menu #logo span {
+    font-weight: 700;
+}
+
+#menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+#menu ul li.user {
+    display: flex;
+    align-items: center;
+    
+}
+
+#menu ul .menu-item {
+    padding: 15px 15px; 
+    font-size: 15px;
+    font-weight: 400;
+    border: 2.2px solid transparent;
+    border-radius: 30px;
+    height: 100%;
+    cursor: pointer;
+    margin: 0 15px;
+
+}
+
+#menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+#menu ul .menu-item:hover {
+    font-weight: 700;
+    border: 2px solid #fff;
+}
+
+#menu ul li .photo {
+    height: 48px;
+    width: 48px; 
+    background-image: url(../img/menu-face.png);
+    border-radius: 100%;
+}
+
+#menu ul li i {
+    color: #fff;
+    margin-left: 5px;
+}
+
+header h1 {
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 10%;
+    font-size: 5em;
+    letter-spacing: 2px;
+    color: #fff;   
+}
+
+header h1 span {
+    color: #01a2a6;
+}
+
+header>p {
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+header button {
+    text-transform: uppercase;
+    padding: 20px;
+    border-radius: 50px;
+    color: #000;
+    background-color: #ffffa6;
+    border: none;
+    font-weight: bold;
+    width: 250px;
+    align-self: center;
+    
+}
+
+.white-shadow {
+    width: 86vw;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    left: 7vw;
+    bottom: -30px;
+}
+
+.black-shadow {
+    width: 100%;
+    height: 20%;
+    background-image: linear-gradient(rgba(0,0,0,0.22),rgba(0,0,0,0.19),rgba(0,0,0,0.18), rgba(0,0,0,0.17), rgba(0,0,0,0.16), rgba(0,0,0,0.15), rgba(0,0,0,0.14), rgba(0,0,0,0.13), rgba(0,0,0,0.12),rgba(0,0,0,0.10),rgba(0,0,0,0.08),rgba(0,0,0,0.07),rgba(0,0,0,0.06),rgba(0,0,0,0.04),rgba(0,0,0,0.03),rgba(0,0,0,0.02),rgba(0,0,0,0.02),rgba(0,0,0,0.01),rgba(0,0,0,0.00));
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* ----- CITY OF LOVE ------*/
+#city {
+    display: flex;
+    padding: 0 7vw;
+}
+
+#city div {
+    width: 50%;
+}
+
+#city .city-text p {
+    line-height: 2;
+}
+
