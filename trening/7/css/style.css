@@ -8,14 +8,12 @@
     src: url(../fonts/ChunkFivePrint.ttf);
 }
 
-#menu #logo {
-    font-family: 'Montserrat', sans-serif;
+body {
+    font-family: 'Lato', sans-serif;
 }
 
-#menu ul .menu-item,
-p,
-header button {
-    font-family: 'Lato', sans-serif;
+#menu #logo {
+    font-family: 'Montserrat', sans-serif;
 }
 
 header h1,
@@ -236,6 +234,11 @@ header button {
     
 }
 
+.destination-functions {
+    display: flex;
+    justify-content: space-between;
+}
+
 .destination-functions .search {
     border-radius: 30px;
     padding: 8px 0 8px 14px;
@@ -248,3 +251,126 @@ header button {
     margin-left: 8px;
 }
 
+.destination-functions .search input i {
+    color: #55676e;
+}
+
+.destination-functions .search input::placeholder {
+    color: #b5b5b5;
+}
+
+#destination .place {
+    color: #aeaeae;
+}
+
+.destination-container {
+    width: 100%;
+    margin: 30px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.destination-container h3 {
+    color: #29d9c2;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.destination-container .background {
+    position: relative;
+    overflow: hidden;
+}
+
+.destination-container .medium .background,
+.destination-container .small .background {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 55%, 17px 50%, 0 45%);
+}
+
+.destination-container .large .background {
+    clip-path: polygon(100% 0, 100% 45%, 95% 50%, 100% 55%, 100% 100%, 0 100%, 0 0);
+}
+
+.destination-container .background .shadow {
+    position: absolute;
+    z-index: 999;
+    left: 100%;
+    top: 100%;
+    transform: translate(-80%,-50%);
+    width: 290px;
+}
+
+.destination-container .background .see {
+    position: absolute;
+    right: 15px;
+    bottom: 10px;
+    color: #fff;
+    z-index: 1000;
+}
+
+.destination-container .text {
+    line-height: 1.6;
+    font-weight: 700;
+}
+
+.destination-container .large-text {
+    padding: 40px 40px 30px 30px;
+}
+
+.destination-container .large {
+    width: 100%;
+    display: flex;
+    background-image: url(../img/destination1-gray.png);
+    background-size: 100% contain;
+}
+
+.destination-container .large img {
+    width: 80px;
+}
+
+.destination-container .large .background {
+    flex-basis: 57%;
+    height: 500px;
+    background-image: url(../img/destination1.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.destination-container .large .large-text {
+    flex-basis: 40%;
+}
+
+.destination-container .medium {
+    width: 55%;
+    display: flex;
+    margin-top: 30px;
+}
+
+.destination-container .medium .background,
+.destination-container .medium .text {
+    flex-basis: 50%;
+}
+
+.destination-container .medium {
+    background-image: url("../img/bromo-background.jpg");
+    background-size: 110%;
+    background-position: left bottom;
+}
+
+.destination-container .medium .background {
+    height: 340px;
+    background-image: url(../img/destination2.png);
+    background-position: center;
+    background-size: auto 100%;
+}
+
+.destination-container .small {
+    width: 43%;
+    margin-top: 30px;
+}
+
+.destination-container .small .background {
+    background-image: url(../img/destination3.png);
+    width: 100%;
+    height: 100%;
+}
