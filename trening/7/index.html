@@ -70,7 +70,7 @@
 
         <div class="destination-functions">
             <div class="search">
-               <i class="fas fa-search"></i>
+                <i class="fas fa-search"></i>
                 <input type="text" placeholder="search destinaation">
             </div>
 
@@ -97,7 +97,7 @@
 
             <div class="medium">
                 <div class="medium-text text">
-                    <img src="" alt="">
+                    <img src="img/destination-img-2.png" alt="">
                     <h3>Bromo</h3>
                     <p>Mount Bromo is an active volcano and part of the Tengger massif, in East Java, Indonesia. At 2,329 metres (7,641 ft) it is not the highest peak of the massif, but is the most well known</p>
                 </div>
@@ -110,7 +110,9 @@
             <div class="small">
                 <div class="background">
                     <p class="see">see more <i class="fas fa-arrow-right"></i></p>
-                    <img src="" alt="">
+                    <div class="small-img-container">
+                        <img src="img/destination-img-3.png" alt="">
+                    </div>
                     <img class="shadow" src="img/shadow.png">
                 </div>
             </div>
@@ -118,55 +120,74 @@
         </div>
 
         <div class="destination-numbers">
-            <span>1</span>
+            <span class="active">1</span>
             <span>2</span>
             <span>3</span>
             <span>4</span>
             <span>5</span>
-            <span><i></i></span>
-            <span><i></i></span>
+            <span><i class="fas fa-angle-right"></i></span>
+            <span><i class="fas fa-angle-double-right"></i></span>
         </div>
 
     </section>
 
     <section id="ittinary">
-        <h2>Set <span>Ittinery</span></h2>
-        <p>Simply drag and drop what you want to visit, and voila we make a ittinery and schedule for your vacation. have a great trip !</p>
+        <div class="ittinary-title">
+            <h2>Set <span>Ittinery</span></h2>
+            <p>Simply drag and drop what you want to visit, and voila we make a ittinery and schedule for your vacation.<br>have a great trip !</p>
+        </div>
 
         <div class="container">
 
             <div class="form">
-                <div class="blue">
-                    <p>Your Ittinery Title Here</p>
-                </div>
-                <div class="orange">
+                <div class="form-container">
+                    <div class="blue">
+                        <div class="blue-background">
+                            <p>Your Ittinery Title Here</p>
+                        </div>
+                    </div>
                     <div class="orange-title">
                         <span>Day 1</span>
                         <span>05/29/2015 <i></i></span>
                     </div>
                     <div class="place">
-                        <img src="" alt="">
-                        <span>Mt. Bromo</span>
-                        <span>03.30 - 9.00</span>
+                        <div>
+                            <div class="container-img container-img1">
+                                <img src="img/destination-img-2.png" alt="">
+                            </div>
+                            <span>Mt. Bromo</span>
+                        </div>
+                        <div class="place-time">
+                            03.30 - 9.00
+                        </div>
                     </div>
                     <div class="sub">
                         <span>add sub destination</span>
-                        <i class=""></i>
+                        <div><span class="plus">+</span></div>
                     </div>
                     <div class="place">
-                        <img src="" alt="">
-                        <span>Mt. Bromo</span>
-                        <span>10.00 - 15.00</span>
+                        <div>
+                            <div class="container-img container-img2">
+                                <img src="img/destination-img-1.png" alt="">
+                            </div>
+                            <span>Batu City</span>
+                        </div>
+                        <div class="place-time">
+                            10.00 - 15.00
+                        </div>
                     </div>
-                    <div class="info">
-                        <p>Enjoy Malang while Listening Music</p>
-                    </div>
-                    <div class="info">
-                        <p>Gonna Eat BAKSO</p>
+
+                    <div class="info-container">
+                        <div class="info">
+                            <p>Enjoy Malang while Listening Music</p>
+                        </div>
+                        <div class="info">
+                            <p>Gonna Eat BAKSO</p>
+                        </div>
                     </div>
                     <div class="sub">
                         <span>add sub destination</span>
-                        <i class=""></i>
+                        <div><span class="plus">+</span></div>
                     </div>
 
                     <div class="orange-title">
@@ -178,9 +199,10 @@
                         <p>Drag Destination Here</p>
                     </div>
                 </div>
-
-                <button class="pdf"><i></i> save as pdf</button>
-                <button class="print"><i></i> print</button>
+                <div class="container-buttons">
+                    <button class="pdf"><img src="img/save.png">save as pdf</button>
+                    <button class="print"><img src="img/print.png"> print</button>
+                </div>
             </div>
 
 
@@ -189,6 +211,14 @@
                 <h4>List of Destination</h4>
                 <hr>
                 <div class="list-title">
+                   <div class="sorted">
+                       <span>sort by:</span>
+                       <span>Mountain</span>
+                   </div>
+                   <div class="search">
+                       <i class="fas fa-search"></i>
+                   </div>
+                </div>
                     <div class="list-item">
                         <div class="left">
                             <p>Mt. Bromo</p>
