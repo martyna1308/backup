@@ -689,3 +689,40 @@ button.print {
     box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.08);
 }
 
+.list .list-item .left {
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.list .list-item .left p {
+    color: #dedede;
+}
+
+.list .list-item .left p span {
+    color: #29d9c2;
+}
+
+.list .list-item .left p:first-of-type {
+    color: #000;
+    font-size: 23px;
+}
+
+.list .list-item .right {
+    height: 100%;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.list .list-item .right img {
+    height: 50%;
+}
+
+.list .list-item .right p {
+    margin: 0;
+    color: #29d9c2;
+}
