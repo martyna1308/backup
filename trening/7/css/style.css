@@ -14,7 +14,8 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
-#menu #logo {
+#menu #logo,
+#contact input::placeholder {
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -687,17 +688,19 @@ button.print {
     border: 1px solid #e8e8e8;
     border-radius: 10px;
     box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.08);
+    padding: 12px;
 }
 
 .list .list-item .left {
-    padding-left: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
+    height: 100%;
 }
 
 .list .list-item .left p {
     color: #dedede;
+    margin: 0;
 }
 
 .list .list-item .left p span {
@@ -714,15 +717,94 @@ button.print {
     padding-right: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-
+    justify-content: space-between;
 }
 
 .list .list-item .right img {
-    height: 50%;
+    height: 65%;
+    width: auto;
 }
 
 .list .list-item .right p {
     margin: 0;
     color: #29d9c2;
+}
+
+/*-----CONTACT-----*/
+#contact {
+    width: 100%;
+    background-image: url(../img/map.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.contact-background {
+    background-color: rgba(1,162,166,0.8);
+    height: 100%;
+    width: 100%;
+    padding: 70px 7vw;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact-title {
+    flex-basis: 100%;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.contact-container {
+    flex-basis: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.contact-container2 {
+    flex-basis: 20%;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.contact-container form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contact-container input {
+    flex-basis: 100%;
+    height: 75px;
+
+}
+
+.contact-container input,
+.contact-container textarea {
+    padding: 25px;
+    margin-bottom: 20px;
+    border: none;
+    background-color: #fff;
+}
+
+.contact-container input::placeholder,
+.contact-container textarea::placeholder {
+    color: #d3d3d3;
+}
+
+.contact-container input[type="text"] {
+    flex-basis: 48%;
+}
+
+.contact-container input[type="submit"] {
+    flex-basis: 35%;
+    justify-self: flex-end;
+    
+}
+
+.contact-container textarea {
+    width: 100%;
+    
 }
