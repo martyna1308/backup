@@ -754,8 +754,12 @@ button.print {
     margin-bottom: 100px;
 }
 
+.contact-title h2 {
+    color: #fff;
+}
+
 .contact-container {
-    flex-basis: 40%;
+    flex-basis: 35%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -763,10 +767,18 @@ button.print {
 }
 
 .contact-container2 {
-    flex-basis: 20%;
+    flex-basis: 30%;
     display: flex;
     justify-content: center;
     text-transform: uppercase;
+    
+}
+
+.contact-container2 p {
+    color: #fff;
+    margin-top: 25%;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .contact-container form {
@@ -784,7 +796,7 @@ button.print {
 .contact-container input,
 .contact-container textarea {
     padding: 25px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     border: none;
     background-color: #fff;
 }
@@ -798,13 +810,27 @@ button.print {
     flex-basis: 48%;
 }
 
-.contact-container input[type="submit"] {
-    flex-basis: 35%;
-    justify-self: flex-end;
-    
+.contact-container fieldset {
+    border: none;
+    padding: 0;
+    width: 100%;
+    text-align: right;
 }
 
 .contact-container textarea {
-    width: 100%;
-    
+    width: 100%;   
+}
+
+.contact-container input[type="submit"] {
+    flex-basis: 35%;
+    justify-self: flex-end;
+    background-color: #b4ec84;
+    color: #fff;
+    border-radius: 40px;
+}
+
+.contact-container h4 {
+    font-size: 60px;
+    margin: 0;
+    font-weight: normal;
 }
