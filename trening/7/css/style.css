@@ -129,7 +129,7 @@ header h1 {
     text-align: center;
     margin-top: 5%;
     margin-bottom: 0;
-    font-size: 5em;
+    font-size: 8em;
     letter-spacing: 3px;
     color: #fff;
 }
@@ -141,19 +141,19 @@ header h1 span {
 header>p {
     text-align: center;
     color: #fff;
-    font-size: 16px;
+    font-size: 18px;
     letter-spacing: 2px;
 }
 
 header button {
     text-transform: uppercase;
-    padding: 20px;
+    padding: 25px;
     border-radius: 50px;
     color: #000;
     background-color: #ffffa6;
     border: none;
     font-weight: bold;
-    width: 250px;
+    width: 290px;
     align-self: center;
 }
 
@@ -884,21 +884,71 @@ button.print {
     clip-path: polygon(50% 0, 100% 0, 100% 100%, 55% 100%);
 }
 
-#subscribe h2 {
+#subscribe h2,
+#subscribe p {
     color: #fff;
 }
 
 #subscribe .input {
     width: 40%;
+    height: 90px;
     z-index: 999;
+    border: 1px solid #7ca83f;
+    border-radius: 4px;
+    box-sizing: border-box;
+    display: flex;
+    background-color: #fff;
 }
 
 #subscribe input[type="email"] {
-   height: 90px;
+   height: 100%;
     width: 85%;
 }
 
 #subscribe input[type="submit"] {
     height: 100%;
-    width: 14%;
+    width: 15%;
+    border: none;
+    background-color: #01a2a6;
+    color: #fff;
+}
+
+footer {
+    height: 500px;
+    background-image: url(../img/mountain.jpg);
+    background-position: bottom;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-color: #2f2933;
+    padding: 30px 7vw;
+    color: #5d5c5c;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer .copyright {
+    text-align: center;
+}
+
+footer .term {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .term-icons {
+    display: flex;
+}
+
+footer .term-icons .icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin-left: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2f2933;
+    opacity: 0.4;
 }

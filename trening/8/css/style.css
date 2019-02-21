@@ -1,0 +1,56 @@
+/* FONTS */
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+h1,
+h2,
+h4,
+.logo {
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+    font-family: 'Tahoma', sans-serif;
+}
+
+h3 {   
+    font-family: 'Leckerli One', cursive;
+}
+
+h1,
+.logo {
+    font-weight: black;
+}
+
+h2,
+h4 {
+    font-weight: bold;
+}
+
+
+/* COMMON */
+.container {
+    width: 1200px;
+    margin: auto;
+}
+
+nav,
+nav ul {
+    display: flex;
+}
+
+/* HEADER */
+nav {
+    height: 150px;
+    justify-content: space-between;
+}
+
+nav .logo {
+    
+}
+
+nav ul {
+    width: 60%;
+}
+
