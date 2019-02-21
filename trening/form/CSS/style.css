@@ -1,0 +1,70 @@
+form {
+    background-color: rgb(78, 102, 182);
+    padding: 10px;
+    width: 400px;
+}
+
+form input {
+    background-color: rgb(121, 157, 175);
+    border: none;
+    width: 50%;
+}
+
+h2 {
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    margin: auto;
+
+}
+
+label {
+    margin-top: 5px;
+    display: block;
+    color:rgb(248, 250, 252);
+}
+
+form select, textarea {
+    background-color: rgb(121, 157, 175);
+    display: inline;
+}
+
+p {
+    display: block;
+    color: white;
+
+}
+
+#submit {
+    margin-top: 20px;
+    display: block;
+    background-color:  #1b4b72;
+    width: 200px;
+    position: relative;
+    left: 20%;
+    height: 30px;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+}
+input:focus, textarea:focus {
+    border-color: #ffffff;
+    border-width: 1px;
+    color: #ffffff;
+    background-color: #4e708c;
+    border-style: solid
+}
+form input[type="radio"], form input[type="checkbox"] {
+    width: 20px;
+}
+
+form label[for*="male"] {
+    display:inline;
+}
+
+form label[for="consent"] {
+    display: block;
+    margin-bottom: 5px;
+
+

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+   <form action="https://formspree.io/maja.lewoc@gmail.com" method="POST">
+        <h2>formularz</h2>
+        <label for="name">Imię</label>
+        <input id="name" type="text" name="name">
+        <label for="lastname">Nazwisko</label>
+        <input id="lastname" type="text" name="lastname">
+        <label for="email">Email</label>
+        <input id="email" type="email" name="email">
+        <label for="phone">Telefon</label>
+        <input id="phone" type="tel" name="phone">
+        <label for="city">Miasto</label>
+        <select id="city" name="city">
+            <option value="wwa">Warszawa</option>
+            <option value="gda">Gdańsk</option>
+            <option value="krk">Kraków</option>
+        </select>
+        <p>Płeć:</p>
+        <label for="female">Kobieta</label>
+        <input id="female" type="radio" name="gender" value="female">
+        <label for="male">Mężczyzna</label>
+        <input id="male" type="radio" name="gender" value="male">
+        <label for="consent">Zgoda na przetwarzanie danych</label>
+        <input id="consent" type= "checkbox" name="consent">
+        <label for="message">Wiadomość</label>
+        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        <input id ="submit" type="submit" value="Wyślij">
+    </form>    
+
+
+</body>
+</html>
