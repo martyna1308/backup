@@ -1,0 +1,82 @@
+@media all and (max-width: 768px) {
+    #main {
+        padding: 0 3vw;
+        height: 100vh;
+    }
+    #menu ul .menu-item {
+        display: none;
+    }
+    #menu ul .bar {
+        margin-right: 30px;
+        cursor: pointer;
+    }
+    #menu ul .bar i {
+        font-size: 25px;
+    }
+    #menu ul .user {
+        cursor: pointer;
+    }
+    header h1 {
+        font-size: 4em;
+        margin-top: 15%;
+    }
+    header>p {
+        font-size: 14px;
+        padding: 30px 10%;
+    }
+    #city {
+        padding: 12vw 2vw;
+        flex-wrap: wrap;
+    }
+    #city div {
+        width: 100%;
+    }
+    
+    #city .city-img,
+    #city .city-img img {
+        position: static;
+    }
+    
+    #city .city-img {
+        text-align: center;
+        padding-top: 20px;
+    }
+    
+    #city .city-img img {
+        width: 50%;
+        margin-top: 50px;
+        
+    }
+    
+    #city h2 {
+        text-align: center;
+    }
+    
+    #city .city-text {
+        padding: 0 10%;
+    }
+    
+    #destination {
+        padding: 40px 2vw;
+    }
+    
+    #destination .destination-title {
+        text-align: center;
+        padding: 0 0 20px;
+    }
+    
+    #destination .destination-title p {
+        text-align: center;
+        margin: auto;
+    }
+    
+    #destination .regulation {
+        position: static;
+        justify-content: center;
+        
+    }
+    
+    .destination-functions {
+        margin-top: 20px;
+    }
+}
