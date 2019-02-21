@@ -539,6 +539,10 @@ header button {
     font-size: 18px; 
 }
 
+.fa-black-tie {
+    font-size: 100px;
+    color: black;
+}
 #ittinary .container .form .sub {
     width: 35%;
     height: 40px;
