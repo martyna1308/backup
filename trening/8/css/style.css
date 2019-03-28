@@ -38,7 +38,8 @@ h4 {
 
 nav,
 nav ul,
-.header-main {
+.header-main,
+.header-text {
     display: flex;
 }
 
@@ -65,6 +66,7 @@ span {
 
 #main .container {
     position: relative;
+    height: 100%;
 }
 
 nav {
@@ -74,7 +76,8 @@ nav {
 }
 
 nav .logo {
-    
+    font-size: 35px;
+    margin-top: -20px;
 }
 
 nav ul {
@@ -90,6 +93,7 @@ nav ul li a {
 
 .header-text {
     width: 50%;
+    flex-direction: column;  
 }
 
 .header-men {
@@ -97,6 +101,6 @@ nav ul li a {
     right: -20px;
     top: 190px;
     height: 75vh;
-    
 }
+
 

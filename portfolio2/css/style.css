@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.container {
+    width: 1200px;
+}
+
+
+/*KOLORY*/
+
+/*pomarańczowy*/
+background-color: ffc15e;
+
+/*granat*/
+background-color: 3f5866;
+
+/*niebieski*/
+background-color: bdd3de;
+
+
+/*MENU*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+nav .logo {
+    font-size: 50px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+}
+
+header {
+    width: 100%;
+}
+
