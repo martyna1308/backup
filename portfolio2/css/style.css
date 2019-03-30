@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     font-family: 'Quicksand', sans-serif;
@@ -5,39 +9,180 @@ body {
 
 .container {
     width: 1200px;
+    margin: auto;
 }
 
 
 /*KOLORY*/
 
 /*pomarańczowy*/
-background-color: ffc15e;
+.orange {
+    background-color: #ffc15e;
+}
 
 /*granat*/
-background-color: 3f5866;
+.darkblue {
+    background-color: #3f5866;
+}
 
 /*niebieski*/
-background-color: bdd3de;
-
+.blue {
+    background-color: #bdd3de;
+}
 
 /*MENU*/
 nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     width: 100%;
-}
-
-nav .logo {
-    font-size: 50px;
+    margin-top: 30px;
 }
 
 nav ul {
     display: flex;
-    justify-content: space-between;
     width: 40%;
+    justify-content: space-between;
+
 }
 
+nav ul li {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 20px;
+    height: 30px;
+    border-style: dotted;
+    border-width: 3px;
+    border-radius: 50%;
+    border-color: #bdd3de;
+    transition: all 0.5s;
+}
+
+nav ul li:hover {
+    transform: scale(1.2);
+    border-color: #ffc15e;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #414141;
+    transition: all 0.5s;
+}
+
+/*HEADER*/
 header {
+    width: 100%;
+    text-align: center;
+}
+
+.header-title img {
+    width: 60%;
+    margin: 100px 0 0;
+}
+
+.header-title p {
+    color: #3f5866;
+    font-size: 55px;
+    margin-top: 0;
+    letter-spacing: 3px;
+}
+
+.text-about p {
+    color: #2e2e2e;
+    font-size: 18px;
+    width: 60%;
+    margin: auto;
+}
+
+.text-about span {
+    color: #ffc15e;
+}
+
+/*PORTFOLIO*/
+
+/*CONTACT*/
+#contact {
+    display: flex;
+    justify-content: center;
+    margin: 100px 0;
+    padding: 
+}
+
+#contact form,
+#contact .contact-text {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#contact form {
+    width: 30%;
+    margin-right: 20px;
+    justify-content: center;
+}
+
+#contact form input,
+#contact form textarea {
+    padding: 12px;
+    margin: 8px 0;
     width: 100%;
 }
 
+#contact form input:placeholder,
+#contact form textarea:placeholder {
+    color: #515151;
+}
+
+#contact form .form-button {
+    background-color: #ffc15e;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px;
+    width: 40%;
+    margin: auto;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+#contact form .form-button:hover {
+    background-color: #f1a62f;
+}
+
+#contact .contact-text {
+    width: 40%;
+    margin-left: 20px;
+    color: #5a5a5a;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#contact .contact-text p {
+    margin: 10px;
+}
+
+#contact .contact-text .text-color {
+    margin-top: 30px;
+    color:  #ffc15e;
+    font-size: 27px;
+}
+
+#contact .contact-text .arrow img {
+    height: 70%;
+}
+
+/*FOOTER*/
+footer {
+    background-color: #bdd3de;
+    color: #fff;
+    padding: 20px 0;
+}
+footer p {
+    margin: 0;
+    text-align: center;
+    font-size: 20px;
+}
