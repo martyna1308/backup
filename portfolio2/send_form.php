@@ -1,24 +1,23 @@
 <?php
-header("content-type: application/json; charset=utf-8");
-$name=isset($_POST['name']) ? $_POST['name'] : "";
-$email=isset($_POST['email']) ? $_POST['email'] : "";
-$message=isset($_POST['message']) ? $_POST['message'] : "";
-if($name && $email && $message){
- $headers = "MIME-Version: 1.0\r\nContent-type: text/plain; charset=utf-8\r\nContent-Transfer-Encoding: 8bit";
- $message_body="Formularz kontaktowy wysłany ze strony marlily.pl";
- $message_body.="Imię i nazwisko: $name\n";
- $message_body.="Adres email: $email\n";
- $message_body.=$message;
- if(mail("martyna1308@gmail.com","Formularz kontaktowy",$message_body,$headers)){
- $json=array("status"=>1,"msg"=>"<p class='status_ok'>Twój formularz został pomyślnie wysłany.</p>");
- }
- else{
- $json=array("status"=>0,"msg"=>"<p class='status_err'>Wystąpił problem z wysłaniem formularza.</p>"); 
- }
+header('Content-Type: text/html; charset=utf-8');
+session_start();
+if(!empty($_POST['name']) and !empty($_POST['email']) and !empty($_POST['message']) {
+    $email_odbiorcy = 'example@example.com'; 
+    $header = 'Reply-To: <'.$_POST['email']."> \r\n";  
+    $header .= "MIME-Version: 1.0 \r\n";  
+    $header .= "Content-Type: text/html; charset=UTF-8";  
+    $wiadomosc = "<p>Dostałeś wiadomość od:</p>"; 
+    $wiadomosc .= "<p>Imie i nazwisko: " . $_POST['name'] . "</p>"; 
+    $wiadomosc .= "<p>Email: " . $_POST['email'] . "</p>"; 
+    $wiadomosc .= "<p>Wiadomość: " . $_POST['message'] . "</p>"; 
+    $message = '<!doctype html><html lang="pl"><head><meta charset="utf-8">'.$wiadomosc.'</head><body>';
+    $subject = 'Wiadomość ze strony marlily.pl';
+    $subject = '=?utf-8?B?'.base64_encode($subject).'?=';
+    if(mail($email_odbiorcy , $subject, $message, $header)){ 
+      die('Wiadomość została wysłana'); 
+    }else{ 
+      die('Wiadomość nie została wysłana'); 
+    } 
+  }
 }
-else{
- $json=array("status"=>0,"msg"=>"<p class='status_err'>Proszę wypełnić wszystkie pola przed wysłaniem.</p>"); 
-}
-echo json_encode($json);
-exit;
 ?>
