@@ -15,22 +15,30 @@ body {
 
 /*KOLORY*/
 
+
 /*pomarańczowy*/
+
 .orange {
     background-color: #ffc15e;
 }
 
+
 /*granat*/
+
 .darkblue {
     background-color: #3f5866;
 }
 
+
 /*niebieski*/
+
 .blue {
     background-color: #bdd3de;
 }
 
+
 /*MENU*/
+
 nav {
     display: flex;
     justify-content: flex-end;
@@ -42,7 +50,6 @@ nav ul {
     display: flex;
     width: 40%;
     justify-content: space-between;
-
 }
 
 nav ul li {
@@ -61,7 +68,6 @@ nav ul li {
 nav ul li:hover {
     transform: scale(1.2);
     border-color: #ffc15e;
-
 }
 
 nav ul li a {
@@ -70,10 +76,14 @@ nav ul li a {
     transition: all 0.5s;
 }
 
+
 /*HEADER*/
+
 header {
     width: 100%;
     text-align: center;
+    position: relative;
+    margin-bottom: 200px;
 }
 
 .header-title img {
@@ -99,14 +109,60 @@ header {
     color: #ffc15e;
 }
 
+.feather {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.feather img {
+    transform: translateY(30%);
+}
+
+
 /*PORTFOLIO*/
+#portfolio .container-portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#portfolio .container-portfolio .portfolio-box {
+    width: 30%;
+    height: 200px;
+    border: 1px solid #515151;
+    margin-bottom: 40px;
+}
+
+#portfolio .portfolio-more {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#portfolio .portfolio-more button {
+    padding: 15px 20px;
+    color: #5a5a5a;
+    font-size: 20px;
+    border: 2px dotted #bdd3de;
+    background-color: transparent;
+    text-transform: lowercase;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+#portfolio .portfolio-more button:hover {
+    transform: scale(1.2);
+    color: #ffc15e;
+}
 
 /*CONTACT*/
+
 #contact {
     display: flex;
     justify-content: center;
     margin: 100px 0;
-    padding: 
 }
 
 #contact form,
@@ -128,6 +184,7 @@ header {
     padding: 12px;
     margin: 8px 0;
     width: 100%;
+    border: 1px solid #515151;
 }
 
 #contact form input:placeholder,
@@ -167,7 +224,7 @@ header {
 
 #contact .contact-text .text-color {
     margin-top: 30px;
-    color:  #ffc15e;
+    color: #ffc15e;
     font-size: 27px;
 }
 
@@ -175,12 +232,15 @@ header {
     height: 70%;
 }
 
+
 /*FOOTER*/
+
 footer {
     background-color: #bdd3de;
     color: #fff;
     padding: 20px 0;
 }
+
 footer p {
     margin: 0;
     text-align: center;

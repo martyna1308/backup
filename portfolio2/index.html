@@ -36,44 +36,72 @@
 
             <div class="text-about">
                 <p>Oferuję unikalne teksty na strony internetowe. Do każdego zlecenia podchodzą indywidualnie, z pełnym zaangażowaniem.
-                <br>
-                <span>Dlaczego właśnie ja?</span> Bo uwielbiam pisać - praca sprawia mi przyjemność, dzięki czemu moje teksty są ciekawsze :)
-                <br>
-                Znam zagadnienia związane z SEO, dodatkowo zajmuję się także tworzeniem stron internetowych, dlatego mam wiedzę ułatwiającą mi dostosowywanie moich tekstów do konkretnych wymagań. 
-                <br>
-                Mam wielokierunkowe wykształcenie - posiadam dyplom plastyka, studiowałam na kierunkach zdrowie publiczne oraz administracja
-                <br>
-                Moje największe zalety to kreatywność, sumienność i terminowość</p>
+                    <br>
+                    <span>Dlaczego właśnie ja?</span> Bo uwielbiam pisać - praca sprawia mi przyjemność, dzięki czemu moje teksty są ciekawsze :)
+                    <br> Znam zagadnienia związane z SEO, dodatkowo zajmuję się także tworzeniem stron internetowych, dlatego mam wiedzę ułatwiającą mi dostosowywanie moich tekstów do konkretnych wymagań.
+                    <br> Mam wielokierunkowe wykształcenie - posiadam dyplom plastyka, studiowałam na kierunkach zdrowie publiczne oraz administracja
+                    <br> Moje największe zalety to kreatywność, sumienność i terminowość</p>
+            </div>
+
+            <div class="feather">
+
+                <img src="img/feather.svg" alt="">
+
             </div>
 
         </header>
 
         <section id="portfolio">
 
-            <div class="container=portfolio">
+            <div class="container-portfolio">
 
                 <div class="portfolio-box">
-
+                    <div class="portfolio-image"></div>
                     <div class="content"></div>
+                </div>
 
+                <div class="portfolio-box">
+                    <div class="portfolio-image"></div>
+                    <div class="content"></div>
+                </div>
+
+                <div class="portfolio-box">
+                    <div class="portfolio-image"></div>
+                    <div class="content"></div>
+                </div>
+                <div class="portfolio-box">
+                    <div class="portfolio-image"></div>
+                    <div class="content"></div>
+                </div>
+
+                <div class="portfolio-box">
+                    <div class="portfolio-image"></div>
+                    <div class="content"></div>
+                </div>
+
+                <div class="portfolio-box">
+                    <div class="portfolio-image"></div>
+                    <div class="content"></div>
                 </div>
 
             </div>
 
             <div class="portfolio-more">
-                <button>WIĘCEJ</button>
+                <button>WIĘCEJ <i class=""></i></button>
             </div>
 
         </section>
 
         <section id="contact">
 
-            <form action="">
-                <input type="text" placeholder="Imię i nazwisko">
-                <input type="email" placeholder="E-mail">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Wiadomość"></textarea>
-                <input type="submit" class="form-button" value="Wyślij">
+            <form method="post" action="../send_form.php" id="contact_form">
+                <input  name="name" id="name" type="text" placeholder="Imię i nazwisko">
+                <input name="email" id="email" type="email" placeholder="E-mail">
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Wiadomość"></textarea>
+                <input type="submit" class="form-button" id="sendBtn" value="Wyślij">
             </form>
+            
+            <div id="send_form_status"></div>
 
             <div class="contact-text">
 
@@ -97,6 +125,14 @@
     <footer>
         <p>Copyright Martyna B</p>
     </footer>
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/main.js"></script>
+
+
 
 </body>
 
