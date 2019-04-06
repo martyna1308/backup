@@ -2,13 +2,9 @@
     .container {
         width: 800px;
     }
+    
 }
 
-@media all and (max-width: 800px) {
-    .container {
-        width: 700px;
-    }
-}
 
 @media all and (max-width: 720px) {
     .container {
@@ -18,6 +14,16 @@
 
 @media all and (max-width: 600px) {
     .container {
-        width: 100vw;
+        width: 98vw;
     }
+    
+    .container-portfolio {
+        flex-direction: column;
+    }
+    
+    .portfolio-box {
+        width: 100%;
+    }
+    
+    .
 }
