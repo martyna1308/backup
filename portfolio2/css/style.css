@@ -341,3 +341,17 @@ footer p {
     text-align: center;
     font-size: 20px;
 }
+
+
+
+/*------------TEKSTY-------------*/
+
+.container .text {
+    padding: 30px;
+    border: 3px dotted #bdd3de;
+    margin-top: 40px;
+}
+.container .text img {
+    width: 100%;
+    margin: auto;
+}

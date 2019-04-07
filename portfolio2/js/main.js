@@ -26,11 +26,7 @@ $(document).ready(function () {
     if (document.getElementsByClassName("portfolio-box").length <= 6) {
         document.getElementsByClassName("portfolio-more")[0].style.display = "none";
         
-        document.getElementById("contact").ctyle.marginTop = 20 + "px"
     }
-
-
-
 
 
 
