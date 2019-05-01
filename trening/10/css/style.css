@@ -1,0 +1,153 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.cursive,
+button {
+    font-family: 'Damion', cursive;
+}
+
+.button-big {
+    width: 240px;
+    height: 60px; 
+}
+
+.container1 {
+    height: 80vh;
+}
+
+.container2 {
+    height: 90vh;
+}
+
+h3 {
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+}
+
+h3,
+p {
+    color: #828282;
+}
+
+hr {
+    background-color: #02c6d8;
+    width: 60px;
+    margin: 25px auto 30px;
+    height: 3px;
+}
+
+/* HEADER */
+header {
+    background-color: #00b6cb;
+    color: #fff;
+}
+
+nav {
+    height: 150px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+}
+
+nav ul li {
+    font-size: 12px;
+}
+
+header h2 {
+    font-size: 2em;
+    margin-top: 20%;
+}
+
+header h1 {
+    font-size: 4em;
+    margin: 10px 0 25px;
+}
+
+header p {
+    font-size: 1.1em;
+    margin-bottom: 40px;
+}
+
+header button {
+    background-color: #9068be;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    padding: 10px 15px;
+    border: none;
+    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.5);
+    transition: all 0.5s ease;
+}
+
+header button:hover {
+    background-color: #996FCA;
+}
+
+header {
+    position: relative;
+}
+
+.header-img-women  {
+    position: absolute;
+    height: 85%;
+    width: auto;
+    right: 0;
+    bottom: 0;
+}
+
+/* ----- ABOUT ----- */
+#about .container {
+    padding: 50px 0;
+}
+#about .container > p {
+    text-align: center;
+}
+
+#about .row {
+    margin: 35px 0;
+}
+
+.about-photo-bg {
+    background-color: #a1c8dd;
+    height: 400px;
+    text-align: center;
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.4);
+}
+
+.about-photo-bg img {
+    height: 100%;
+    margin: auto;
+}
+
+#about .about-text {
+    text-align: left;
+    padding: 0 30px;
+    background-color: #f6f6f6;
+    height: 320px;
+    margin-top: 40px;
+    line-height: 1.1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+#about .about-text .text-more {
+    color: #e46e48;
+    margin: 0;
+}
+
+#about .col-lg-7 {
+    padding-left: 0;
+}
+
+
+
