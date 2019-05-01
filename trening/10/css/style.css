@@ -3,7 +3,8 @@ body {
 }
 
 .cursive,
-button {
+button,
+#presence input[type="submit"] {
     font-family: 'Damion', cursive;
 }
 
@@ -149,5 +150,131 @@ header {
     padding-left: 0;
 }
 
+/* ----- Presence ----- */
+#presence {
+    padding: 30px 0;
+    background-color: #9068be;
+}
+
+#presence h4 {
+    font-size: 25px;
+    color: #fff;
+}
+
+#presence p {
+    font-size: 15px;
+    color: #fff;
+    margin: 0;
+}
+
+#presence .presence-buttons {
+    display: flex;
+    justify-content: space-between
+}
+
+#presence input {
+    height: 65px;
+}
+
+#presence input[type="text"], 
+#presence input[type="email"] {
+    flex-basis: 35%;
+    padding-left: 14px;
+}
+
+#presence input[type="submit"] {
+    flex-basis: 27%;
+    background-color: #e46e48;
+    color: #fff;
+    border: none;
+    font-size: 25px;
+}
+
+#presence input[type="email"]::placeholder ,
+#presence input[type="text"]::placeholder {
+    color: #ababab;
+}
+
+
+/* ----- What we do best ----- */
+#do-best {
+    background-color: #f6f6f6;
+    padding: 60px 0;
+}
+
+#do-best .container > p {
+    text-align: center;
+    margin-bottom: 140px;
+}
+#do-best .row {
+    margin-top: 30px;
+    text-align: center;
+}
+
+#do-best .icon {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -75px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#do-best .icon1 {
+    background-color: #9068be;
+}
+
+#do-best .icon2 {
+    background-color: #02c6d8;
+}
+
+#do-best .best-shape {
+    background-color: #fff;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+    padding: 80px 30px 50px;
+    position: relative;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+#do-best .best-shape1 h5 {
+    color: #9068be;
+}
+
+#do-best .best-shape2 h5 {
+    color: #02c6d8;
+    margin: 20px 0;
+}
+
+#do-best .best-shape h5 {
+    margin: 20px 0;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+#do-best .best-shape button {
+    border: none;
+    color: #fff;
+    width: 145px;
+    height: 44px;
+    font-size: 22px;
+    position: absolute;
+    bottom: -22px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#do-best .best-shape .button1 {
+    background-color: #e46e48;
+}
+
+#do-best .best-shape .button2 {
+    background-color: #326c73;
+}
 
 
