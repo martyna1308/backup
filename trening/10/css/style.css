@@ -197,21 +197,22 @@ header {
 
 
 /* ----- What we do best ----- */
-#do-best {
+.do-best {
     background-color: #f6f6f6;
-    padding: 60px 0;
+    padding: 60px 0 100px;
 }
 
-#do-best .container > p {
+.do-best .container > p {
     text-align: center;
     margin-bottom: 140px;
 }
-#do-best .row {
+
+.do-best .row {
     margin-top: 30px;
     text-align: center;
 }
 
-#do-best .icon {
+.do-best .icon {
     width: 150px;
     height: 150px;
     border-radius: 100%;
@@ -225,15 +226,15 @@ header {
     transform: translateX(-50%);
 }
 
-#do-best .icon1 {
+.do-best .icon1 {
     background-color: #9068be;
 }
 
-#do-best .icon2 {
+.do-best .icon2 {
     background-color: #02c6d8;
 }
 
-#do-best .best-shape {
+.best-shape {
     background-color: #fff;
     box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
     padding: 80px 30px 50px;
@@ -242,22 +243,22 @@ header {
     font-size: 15px;
 }
 
-#do-best .best-shape1 h5 {
+.best-shape1 h5 {
     color: #9068be;
 }
 
-#do-best .best-shape2 h5 {
+.best-shape2 h5 {
     color: #02c6d8;
     margin: 20px 0;
 }
 
-#do-best .best-shape h5 {
+.best-shape h5 {
     margin: 20px 0;
     font-weight: 700;
     font-size: 25px;
 }
 
-#do-best .best-shape button {
+.best-shape button {
     border: none;
     color: #fff;
     width: 145px;
@@ -269,12 +270,59 @@ header {
     transform: translateX(-50%);
 }
 
-#do-best .best-shape .button1 {
+.best-shape .button1 {
     background-color: #e46e48;
 }
 
-#do-best .best-shape .button2 {
+.best-shape .button2 {
     background-color: #326c73;
+}
+
+
+/* ----- TESTIMONIALS ----- */
+.testimonials {
+    padding: 60px 0 100px;
+}
+
+.testimonials .container > p {
+    text-align: center;
+    margin-bottom: 140px;
+}
+
+.testimonials .quote {
+    position: absolute;
+    top: -38px;
+    left: 30px;
+    opacity: 0.35;
+}
+
+.testimonials .quote img {
+    height: 80px;
+}
+
+.testimonials-shape {
+    background-color: #fff;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+    padding: 50px 30px 50px;
+    position: relative;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.testimonials-photo-container {
+    position: absolute;
+    top: 100%;
+    transform: translate(-50%, -30%);
+    left: 50%;
+    text-align: center;
+}
+
+.testimonials-photo-container .testimonials-photo {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    background-color: pink;
+    margin: auto;
 }
 
 
