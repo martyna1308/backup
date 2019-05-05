@@ -1,21 +1,115 @@
+@media all and (max-width: 992px) {
+    .header-img-women {
+        height: 70%;
+    }
+    .header h2 {
+        margin-top: 10%;
+        font-size: 1.5em;
+    }
+    .header h1 {
+        font-size: 2.5em;
+    }
+}
+
 @media all and (max-width: 768px) {
     .header .container-clicked {
         left: -50%;
-    } 
-    
+    }
     .item-mobile {
         display: block;
     }
-    
     .header .container .nav ul.menu-mobile .item {
         display: none!important;
     }
-    
-    .hide-menu {
-        overflow-y: scroll;
-    }
-    
     .header {
         overflow-y: hidden;
+    }
+    .nav .hide-menu li {
+        margin: 8px 0;
+        font-size: 25px;
+    }
+    .header h2 {
+        font-size: 1.5em;
+        margin-top: 10%;
+        z-index: 9999999;
+    }
+    .header h1 {
+        font-size: 2em;
+        margin: 10px 0 25px;
+        width: 300px;
+        z-index: 9999999;
+    }
+    .header p {
+        font-size: 1em;
+        padding-right: 40%;
+    }
+    .header-img-women {
+        height: 60%;
+    }
+    .best-shape2 {
+        margin-top: 150px;
+    }
+    .testimonials-shape2,
+    .testimonials-shape3 {
+        margin-top: 150px;
+    }
+    
+    .work-with-us .work-with-us-text {
+        font-size: 18px;
+    }
+}
+
+@media all and (max-width: 625px) {
+    .header-img-women {
+        height: 40%;
+    }
+}
+
+@media all and (max-width: 575px) {
+    .header > .container > div.row > div {
+        text-align: center;
+    }
+    
+    .header h1,
+    .header h2 {
+        text-align: center;
+    }
+    
+    .header h1 {
+        margin: 10px auto;
+    }
+    
+    .header h2 {
+        margin: 15px auto;
+    }
+    
+    .header p {
+        padding: 0;
+        
+    }
+    
+    .header-img-women {
+        display: none;
+    }
+    #presence h4 {
+        text-align: center;
+        font-size: 25px;
+    }
+    
+    #presence p {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    #presence .presence-buttons {
+        flex-direction: column;
+    }
+    
+    .work-with-us .work-with-us-text {
+        font-size: 15px;
+    }
+    
+    .footer-link-line {
+        display: none;
     }
 }

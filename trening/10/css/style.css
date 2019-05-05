@@ -45,11 +45,7 @@ hr {
     background-color: #00b6cb;
     color: #fff;
     overflow-x: hidden;
-}
-
-.header .container {
-    position: relative;
-    height: 100%;
+    z-index: 0;
 }
 
 .header .container-clicked {
@@ -69,9 +65,14 @@ hr {
     height: 150px;
     text-transform: uppercase;
     color: #fff;
+    z-index: 9999999999999;
 }
 
-.nav ul {
+ul {
+    list-style: none;
+}
+
+.nav ul.menu-mobile {
     list-style: none;
     margin: 0;
 }
@@ -84,18 +85,23 @@ hr {
     cursor: pointer;
 }
 
+.fa-bars {
+    margin-left: 8px;
+    font-size: 20px;
+}
+
 .item-mobile {
     display: none;
 }
 
 .hide-menu {
     position: absolute;
-    left: 100%;
-    top: 0;
+    right: 0;
+    top: 80px;
     width: 300px;
     display: none;
     transition: all 0.5s ease;
-    height: 100%;
+    margin-right: 30px;
 }
 
 .hide-menu-click {
@@ -105,7 +111,8 @@ hr {
 
 .nav .hide-menu li {
     margin: 40px 0;
-    font-size: 25px;
+    font-size: 16 px;
+    text-align: right;
 }
 
 .hide-menu li a {
@@ -155,6 +162,7 @@ hr {
     width: auto;
     right: 0;
     bottom: 0;
+    z-index: -1;
 }
 
 /* ----- ABOUT ----- */
@@ -458,7 +466,7 @@ hr {
 }
 
 .footer-logo {
-    margin: 20px 0;
+    margin: 20px auto;
 }
 
 .footer-social {
