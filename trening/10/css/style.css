@@ -41,42 +41,95 @@ hr {
 }
 
 /* HEADER */
-header {
+.header {
     background-color: #00b6cb;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+.header .container {
+    position: relative;
+    height: 100%;
+}
+
+.header .container-clicked {
+    left: -30%;
+} 
+
+.header a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.header a:hover {
     color: #fff;
 }
 
-nav {
+.nav {
     height: 150px;
     text-transform: uppercase;
     color: #fff;
 }
 
-nav ul {
+.nav ul {
     list-style: none;
     margin: 0;
 }
 
-nav ul li {
+.nav ul li {
     font-size: 12px;
 }
 
-header h2 {
+.menu-more {
+    cursor: pointer;
+}
+
+.item-mobile {
+    display: none;
+}
+
+.hide-menu {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    width: 300px;
+    display: none;
+    transition: all 0.5s ease;
+    height: 100%;
+}
+
+.hide-menu-click {
+    display: block;
+    transition: all 0.5s;
+}
+
+.nav .hide-menu li {
+    margin: 40px 0;
+    font-size: 25px;
+}
+
+.hide-menu li a {
+    color: #fff;
+    letter-spacing: 4px
+}
+
+.header h2 {
     font-size: 2em;
     margin-top: 20%;
 }
 
-header h1 {
+.header h1 {
     font-size: 4em;
     margin: 10px 0 25px;
 }
 
-header p {
+.header p {
     font-size: 1.1em;
     margin-bottom: 40px;
+    color: #fff;
 }
 
-header button {
+.header button {
     background-color: #9068be;
     color: #fff;
     font-size: 25px;
@@ -88,11 +141,11 @@ header button {
     transition: all 0.5s ease;
 }
 
-header button:hover {
+.header button:hover {
     background-color: #996FCA;
 }
 
-header {
+.header {
     position: relative;
 }
 
@@ -417,6 +470,13 @@ header {
     height: 30px; 
     background-color: #fff;
     margin: 0 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icon i {
+    font-size: 23px;    
 }
 
 

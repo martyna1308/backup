@@ -1,0 +1,21 @@
+@media all and (max-width: 768px) {
+    .header .container-clicked {
+        left: -50%;
+    } 
+    
+    .item-mobile {
+        display: block;
+    }
+    
+    .header .container .nav ul.menu-mobile .item {
+        display: none!important;
+    }
+    
+    .hide-menu {
+        overflow-y: scroll;
+    }
+    
+    .header {
+        overflow-y: hidden;
+    }
+}
