@@ -148,6 +148,11 @@ header {
     background-position: center;
 }
 
+.portfolio-box .portfolio-content {
+    object-fit: cover;
+    object-position: top left;
+}
+
 .portfolio-image1 {
     background-image: url(../img/cosmetics.jpg);
 }
@@ -170,30 +175,6 @@ header {
     background-image: url(../img/medicine.jpg);
 }
 
-.portfolio-content {
-    background-size: 100%;
-    background-position: center;
-}
-
-.portfolio-content1 {
-    background-image: url(../img/teksty/serum.png);
-}
-.portfolio-content2 {
-    background-image: url(../img/teksty/fashion.png);
-}
-.portfolio-content3 {
-    background-image: url(../img/teksty/pistolet-na-klej.png);
-}
-.portfolio-content4 {
-    background-image: url(../img/teksty/szkola.png);
-}
-.portfolio-content5 {
-    background-image: url(../img/teksty/lampa.png
-    );
-}
-.portfolio-content6 {
-    background-image: url(../img/teksty/wapno2.png);
-}
 
 .portfolio-box .fa-eye {
     position: absolute;
@@ -249,10 +230,7 @@ header {
     height: 100vh;
 }
 
-.portfolio-clicked .portfolio-box .portfolio-content {
-    background-size: contain;
-    overflow: scroll;
-    height: auto;
+   
 }
 /*--------------------*/
 
