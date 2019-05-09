@@ -231,11 +231,38 @@ header {
     opacity: 0.7;
 }
 
+/*PORTFOLIO GALLERY*/
+.gallery-overflow {
+    overflow: hidden;
+}
+
+.portfolio-clicked {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+
+.portfolio-clicked .portfolio-box {
+    width: 100vw;
+    height: 100vh;
+}
+
+.portfolio-clicked .portfolio-box .portfolio-content {
+    background-size: contain;
+    overflow: scroll;
+    height: auto;
+}
+/*--------------------*/
+
 .portfolio-more {
     width: 100%;
     display: flex;
     justify-content: center;
 }
+
+
 
 .portfolio-more button {
     padding: 15px 20px;
