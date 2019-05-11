@@ -13,6 +13,7 @@ $(document).ready(function () {
     }
 
 
+<<<<<<< HEAD
     $(".portfolio-box").click(function (e) {
         document.getElementsByClassName("container-portfolio")[0].classList.toggle("portfolio-clicked");
         document.body.classList.toggle("gallery-overflow");
@@ -33,4 +34,7 @@ $(document).ready(function () {
 
 //test2
 
+=======
+   
+>>>>>>> 1431bef5e8ef6bcd83ceb414b896caebf0f7020c
 });
