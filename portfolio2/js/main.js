@@ -19,12 +19,13 @@ $(document).ready(function () {
         let targetsMasks = document.getElementsByClassName("portfolio-mask");
         let targetsBoxes = document.getElementsByClassName("portfolio-box");
 
-        for(let j in targetsBoxes) {
-            targetsBoxes[j].style.display = "none";
+        for(let j = 0; j<targetsBoxes.length; j++) {
+           targetsBoxes[j].classList.toggle("hide-me");
         };
 
         for (let i in targetsMasks) {
             if (e.target === targetsMasks[i]) {
+                console.log(targetsBoxes[i]);
                 targetsBoxes[i].style.display = "flex";
             }
         }
