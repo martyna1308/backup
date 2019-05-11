@@ -175,6 +175,9 @@ header {
     background-image: url(../img/medicine.jpg);
 }
 
+a.portfolio-box {
+    z-index: 999999999999;
+}
 
 .portfolio-box .fa-eye {
     position: absolute;
@@ -350,7 +353,10 @@ footer p {
 
 
 /*------------TEKSTY-------------*/
-
+nav {
+    position: relative;
+    
+}
 .container .text {
     padding: 30px;
     border: 3px dotted #bdd3de;
@@ -361,4 +367,13 @@ footer p {
 .container .text img {
     width: 100%;
     margin: auto;
+}
+
+.arrows {
+    position: absolute;
+    top: 50%;
+}
+
+.body-text nav ul {
+    width: 48%;
 }
