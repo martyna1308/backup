@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 
 <head>
     <meta charset="UTF-8">
-    <title>MB - Portfolio</title>
+    <title>MB - Portfolio | Strona główna</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -67,42 +67,42 @@
                     </div>
                     <img src="img/teksty/serum.png" class="portfolio-content portfolio-content1">
                     <div class="portfolio-mask"></div>
-                    
+                    <div class="loupe"><i class="fas fa-eye"></i></div>
                 </a>
 
-                <div class="portfolio-box">
+                <a href="text2.html" class="portfolio-box">
                     <div class="portfolio-image portfolio-image2"></div>
                     <img src="img/teksty/fashion.png" class="portfolio-content portfolio-content2">
                     <div class="portfolio-mask"></div>
-                    
-                </div>
+                    <div class="loupe"><i class="fas fa-eye"></i></div>
+                </a>
 
-                <div class="portfolio-box">
+                <a href="text3.html" class="portfolio-box">
                     <div class="portfolio-image portfolio-image3"></div>
                     <img src="img/teksty/pistolet-na-klej.png" class="portfolio-content portfolio-content3">
                     <div class="portfolio-mask"></div>
-                    
-                </div>
-                <div class="portfolio-box">
+                    <div class="loupe"><i class="fas fa-eye"></i></div>
+                </a>
+                <a href="text4.html" class="portfolio-box">
                     <div class="portfolio-image portfolio-image4"></div>
                     <img src="img/teksty/szkola.png" class="portfolio-content portfolio-content4">
                     <div class="portfolio-mask"></div>
-                    
-                </div>
+                    <div class="loupe"><i class="fas fa-eye"></i></div>
+                </a>
 
-                <div class="portfolio-box">
+                <a href="text5.html" class="portfolio-box">
                     <div class="portfolio-image portfolio-image5"></div>
                     <img src="img/teksty/lampa.png" class="portfolio-content portfolio-content5">
                     <div class="portfolio-mask"></div>
-                   
-                </div>
+                    <div class="loupe"><i class="fas fa-eye"></i></div>
+                </a>
 
-                <div class="portfolio-box">
+                <a href="text6.html" class="portfolio-box">
                     <div class="portfolio-image portfolio-image6"></div>
                     <img src="img/teksty/wapno.png" class="portfolio-content portfolio-content6">
                     <div class="portfolio-mask"></div>
-                    
-                </div>
+                    <div class="loupe"><i class="fas fa-eye"></i></div>
+                </a>
 
             </div>
 
@@ -114,10 +114,10 @@
 
         <section id="contact">
 
-            <form method="post" action="../send_form.php" id="contact_form">
-                <input name="name" id="name" type="text" placeholder="Imię i nazwisko">
-                <input name="email" id="email" type="email" placeholder="E-mail">
-                <textarea name="message" id="message" cols="30" rows="10" placeholder="Wiadomość"></textarea>
+            <form method="POST" action="https://formspree.io/kontakt@marlily.pl" id="contact_form" autocomplete="on">
+                <input name="Imię" id="name" type="text" placeholder="Imię i nazwisko">
+                <input name="email" id="email" type="email" name="_replyto" placeholder="E-mail">
+                <textarea name="message" name="Wiadomość" id="message" cols="30" rows="10" placeholder="Wiadomość"></textarea>
                 <input type="submit" class="form-button" id="sendBtn" value="Wyślij">
             </form>
 
