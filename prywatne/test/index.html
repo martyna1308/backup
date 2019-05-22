@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formularz szkoleniowy</title>
+</head>
+
+<body>
+    <h1>Formularz szkoleniowy</h1>
+    <form action="https://formspree.io/martyna1308@gmail.com" method="POST">
+        <label for="imie">Imię:</label>
+        <input type="text" name="imie" id="imie"><br /><br>
+        <label for="nazwisko">Nazwisko:</label>
+        <input type="text" name="nazwisko" id="nazwisko"><br /><br>
+        <label for="email">E-mail:</label>
+        <input type="email" name="mail"><br /><br>
+        <label for="number">Numer telefonu:</label>
+        <input type="number" name="quantity"><br /><br>
+        <label for="miasto">Miasto:</label>
+        <!-- <input type="text" name="miasto" ></br> -->
+        <select name="select">
+            <option value="value1">Warszawa</option>
+            <option value="value2">Kraków</option>
+            <option value="value3">Gdańsk</option>
+        </select><br /><br>
+        <label for="gender">Płeć:</label>
+        <input type="radio" name="gender">Mężczyzna
+        <input type="radio" name="gender">Kobieta<br /><br>
+        <label for="text">Zgoda na dane osobowe:</label>
+        <input type="checkbox" name="agreement"><br /><br>
+        <label for="text">Wpisz wiadomość:</label><br/>
+        <textarea maxlength="1000" name="message"></textarea><br>
+        <input type="submit" value="Wyślij"><br/>
+
+    </form>
+</body>
+
+</html>
