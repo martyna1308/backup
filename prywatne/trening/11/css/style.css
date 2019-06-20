@@ -1,0 +1,40 @@
+/*MAIN STYLES*/
+body {
+    margin: 0;
+}
+
+/* FoNTS */
+
+
+/* HEADER */
+
+/*header background*/
+.header {
+    background-color: #7c848d;
+    height: 95vh;
+    position: relative;
+}
+
+.background-men {
+    position: absolute;
+    height: 100%;
+    right: 10%;
+}
+
+/*header nav*/
+.navigation .row {
+    height: 17vh;
+}
+
+/*logo*/
+.logo img {
+    
+}
+
+/*menu*/
+.menu {
+    list-style: none;
+    color: #fff;
+    text-transform: uppercase;
+    
+}
