@@ -445,3 +445,60 @@ body {
 .portfolio__border {
     bottom: 20px;
 }
+
+/* BLOG */
+.blog {
+    background-image: url(../img/blog-bg.png);
+    background-repeat: repeat;
+}
+
+.blog__container {
+    text-align: center;  
+    display: flex;
+    flex-direction: column;
+}
+
+.blog__title {
+    margin: auto;
+    width: 430px;
+    margin-top: 60px;
+}
+
+.blog__lines {
+    display: flex;
+    height: 35px;
+    align-items: center;
+    justify-content: center;
+}
+
+.blog__line {
+    height: 2.5px;
+    width: 50px;
+    background-color: #3b3b3b;
+    margin: 0 10px;
+}
+
+.blog__titleSecondary {
+    text-transform: uppercase;
+    font-family: "Oswald";
+    margin-bottom: 50px;
+}
+
+.blog__img {
+    background-color: #E3DFD7;
+    width: 35%;
+    height: 270px;
+    border: 5px solid #fff;
+    box-shadow: 3px 3px 5px -2px rgba(102,102,102,0.5);
+    flex-grow: 0;
+}
+
+.blog__text {
+    flex-grow: 2;
+    text-align: left;
+}
+
+.blog__item {
+    display: flex;
+
+}
