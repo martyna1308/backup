@@ -15,42 +15,30 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="container text-center">
-        <h2 class="text-center">My Skills</h2>
-        <div class="row">
-            <div class="col-md-4 col-sm-6 col-xsm-12 mt-5">
-                    <i class="fab fa-html5 fa-4x text-warning"></i>
-                    <p>HTML5</p>
-            </div>
-
-            <div class="col-md-4 col-sm-6 col-xsm-12 mt-5">
-                <i class="fab fab fa-css3 fa-4x text-warning"></i>
-                 <p>CSS3</p>
-            </div>
-
-            <div class="col-md-4 col-sm-6 col-xsm-12 mt-5">
-                <i class="fab fab fa-js fa-4x text-warning"></i>
-                <p>JavaScript</p>
-            </div>
+            <form action="https://formspree.io/martyna1308@gmail.com" method="POST">
+            <p class="szkolenie">Zapisz się na szkolenie</p>
             
-            <div class="col-md-4 col-sm-6 col-xsm-12 mt-5">
-                        <i class="fab fab fa-react fa-4x text-warning"></i>
-                        <p>ReactJS</p>
-            </div>
+            <label><input type="text" name="imie" placeholder="Imię" ></label>
+            <label><input type="text" name="nazwisko" placeholder="Nazwisko"></label>
+            <label ><input type="email" name="email" placeholder="adres email"><br></label>
+            <label ><input type="tel" name="telefon" placeholder="telefon"></label><br>
+            <p>Wybierz płeć</p>
+           
+            <label><input type="radio" name="plec">Kobieta</label><br>
+           
+            <label><input type="radio" name="plec">Mężczyzna</label><br>
+            <p class="paragrafy">Wybierz miasto</p>
+            <select name="miasto">
+                    <option value="Kraków">Kraków</option>
+                    <option value="Warszawa" selected>Warszawa</option>
+                    <option value="Gdańsk">Gdańsk</option>
+             </select><br>
+             <label><input type="checkbox" name="zgoda">Wyrażam zgodę na przetwarzanie danych</label><br>
+
+            <label ><textarea name="treść wiadomosci" placeholder="zostaw wiadomość"></textarea></label>
+            <input type="submit" value="Wyślij">
+          </form> 
+
     
-            <div class="col-md-4 col-sm-6 col-xsm-12 mt-5">
-                        <i class="fab fab fa-git fa-4x text-warning"></i>
-                        <p>GIT</p>
-            </div>
-
-            <div class="col-md-4 col-sm-6 col-xsm-12 mt-5">
-                    <i class="fab fab fa-wordpress fa-4x text-warning"></i>
-                    <p>WordPress</p>
-        </div>
-    </div>
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
