@@ -28,23 +28,55 @@
         padding-right: 40px;
     }
     
+    .main__bars {
+        display: flex;
+    }
+    
+    .main__left {
+        width: 100%;
+    }
+    
+    .main__right {
+        display: none;
+    }
+    
+    .main__squareGray {
+        width: 85%;
+    }
+    
+    .main__button1 {
+        margin-bottom: 16px;
+    }
+    
     /* MOBILNE MENU */
     .main__menuList {
         flex-direction: column;
         align-self: flex-start;
         text-align: right;
-        margin-top: 78px;
+        margin-top: 30px;
 }
 
     .main__menuItem {
         margin-bottom: 20px;
         font-size: 24px;
+        display: none;
     }
+    
+    .main__mobile .main__menuItem {
+        display: block;
+    }
+    
+
 }
 
 @media all and (max-width: 576px) {
     .container {
         padding-left: 20px;
         padding-right: 20px;
+    }
+    
+    .about__text {
+        width: auto;
+        padding: 0 20px;
     }
 }
